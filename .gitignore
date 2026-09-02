@@ -1,0 +1,22 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Raw datasets: multi-GB CSVs never go to Git
+# (downloaded from the CICDDoS2019/CSE-CIC-IDS2018 repositories)
+data/
+data2/
+*.csv
+
+# Common local artifacts
+.DS_Store
+node_modules/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.ivy2/
+models/
+
+# Driver JDBC baixado sob demanda pelo notebook
+jars/

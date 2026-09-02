@@ -1,0 +1,5 @@
+pyspark>=4.0
+numpy>=1.26
+pandas>=2.0
+jupyter>=1.0
+nbconvert>=7.0

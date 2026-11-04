@@ -1,0 +1,104 @@
+{
+ "run_id": "20261102_001711",
+ "impressao": "06a102b4b657",
+ "impressao_dobras": "7e97c47f",
+ "retomada": true,
+ "criado_em": "2026-11-02T00:17:11",
+ "concluido_em": "2026-11-03T17:36:50",
+ "tempo_busca": {
+  "relogio_s": 20993.322756199632,
+  "sessoes": 2,
+  "treino_somado_s": 20146.029443298467,
+  "florestas": 162,
+  "detalhe_sessoes": [
+   {
+    "inicio": "2026-11-02T00:17:15",
+    "fim": "2026-11-02T06:07:09",
+    "relogio_s": 20993.314854899887,
+    "unidades_novas": 27,
+    "florestas_novas": 162,
+    "interrompida": false
+   },
+   {
+    "inicio": "2026-11-03T17:25:32",
+    "fim": "2026-11-03T17:25:32",
+    "relogio_s": 0.0079012997448444,
+    "unidades_novas": 0,
+    "florestas_novas": 0,
+    "interrompida": false
+   }
+  ]
+ },
+ "grade": {
+  "n_estimators": [
+   100,
+   300,
+   500
+  ],
+  "max_depth": [
+   null,
+   15,
+   8
+  ],
+  "min_samples_leaf": [
+   1,
+   5,
+   10
+  ]
+ },
+ "sementes": [
+  42,
+  43,
+  44
+ ],
+ "k_cv": 5,
+ "semente_dobras": 42,
+ "tamanhos_avaliados": [
+  25,
+  50,
+  100,
+  200,
+  300,
+  400,
+  500
+ ],
+ "n_florestas": 162,
+ "fixos": {
+  "min_samples_split": 2,
+  "max_features": "sqrt",
+  "class_weight": "balanced",
+  "n_jobs": -1
+ },
+ "regra": {
+  "metricas": [
+   "roc_auc",
+   "mcc"
+  ],
+  "mult_erro_padrao": 1.0,
+  "desempate": "menos nós, depois menos árvores, depois folha maior"
+ },
+ "classes": [
+  "BENIGN",
+  "LDAP",
+  "MSSQL",
+  "NetBIOS",
+  "Syn",
+  "UDP",
+  "UDPLag"
+ ],
+ "software": {
+  "scikit-learn": "1.9.1",
+  "numpy": "2.5.3",
+  "pandas": "2.3.3",
+  "joblib": "1.6.0",
+  "psutil": "7.2.2"
+ },
+ "hardware": {
+  "so": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+  "nucleos_logicos": 12,
+  "nucleos_fisicos": 10,
+  "ram_total_gib": 7.692127227783203
+ }
+}

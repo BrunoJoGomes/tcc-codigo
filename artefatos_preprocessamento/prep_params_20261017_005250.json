@@ -1,0 +1,669 @@
+{
+ "versao": "20261017_005250",
+ "ajustado_em": "treino (prep_final_treino, deduplicado)",
+ "linhas_treino": 8257343,
+ "features": [
+  "protocol",
+  "flow_duration",
+  "total_fwd_packets",
+  "total_backward_packets",
+  "total_length_of_fwd_packets",
+  "total_length_of_bwd_packets",
+  "fwd_packet_length_max",
+  "fwd_packet_length_min",
+  "fwd_packet_length_mean",
+  "fwd_packet_length_std",
+  "bwd_packet_length_max",
+  "bwd_packet_length_min",
+  "bwd_packet_length_mean",
+  "bwd_packet_length_std",
+  "flow_bytes_s",
+  "flow_packets_s",
+  "flow_iat_mean",
+  "flow_iat_std",
+  "flow_iat_max",
+  "flow_iat_min",
+  "fwd_iat_total",
+  "fwd_iat_mean",
+  "fwd_iat_std",
+  "fwd_iat_max",
+  "fwd_iat_min",
+  "bwd_iat_total",
+  "bwd_iat_mean",
+  "bwd_iat_std",
+  "bwd_iat_max",
+  "bwd_iat_min",
+  "fwd_psh_flags",
+  "fwd_header_length",
+  "bwd_header_length",
+  "fwd_packets_s",
+  "bwd_packets_s",
+  "min_packet_length",
+  "max_packet_length",
+  "packet_length_mean",
+  "packet_length_std",
+  "packet_length_variance",
+  "syn_flag_count",
+  "ack_flag_count",
+  "urg_flag_count",
+  "cwe_flag_count",
+  "down_up_ratio",
+  "average_packet_size",
+  "avg_fwd_segment_size",
+  "avg_bwd_segment_size",
+  "init_win_bytes_forward",
+  "init_win_bytes_backward",
+  "act_data_pkt_fwd",
+  "min_seg_size_forward",
+  "active_mean",
+  "active_std",
+  "active_max",
+  "active_min",
+  "idle_mean",
+  "idle_std",
+  "idle_max",
+  "idle_min",
+  "inbound"
+ ],
+ "features_reduzido": [
+  "protocol",
+  "total_fwd_packets",
+  "total_length_of_fwd_packets",
+  "total_length_of_bwd_packets",
+  "fwd_packet_length_std",
+  "bwd_packet_length_max",
+  "bwd_packet_length_min",
+  "bwd_packet_length_std",
+  "flow_bytes_s",
+  "flow_iat_std",
+  "fwd_iat_total",
+  "fwd_iat_min",
+  "bwd_iat_total",
+  "bwd_iat_mean",
+  "bwd_iat_max",
+  "bwd_iat_min",
+  "fwd_psh_flags",
+  "fwd_header_length",
+  "bwd_header_length",
+  "fwd_packets_s",
+  "bwd_packets_s",
+  "max_packet_length",
+  "packet_length_std",
+  "packet_length_variance",
+  "syn_flag_count",
+  "ack_flag_count",
+  "urg_flag_count",
+  "cwe_flag_count",
+  "down_up_ratio",
+  "average_packet_size",
+  "avg_bwd_segment_size",
+  "init_win_bytes_forward",
+  "init_win_bytes_backward",
+  "min_seg_size_forward",
+  "active_std",
+  "active_max",
+  "active_min",
+  "idle_std",
+  "idle_min",
+  "inbound"
+ ],
+ "colunas_com_ausentes": [
+  "flow_bytes_s",
+  "flow_packets_s"
+ ],
+ "mapa_rotulos": {
+  "UDP-lag": "UDPLag"
+ },
+ "parametros": [
+  {
+   "coluna": "protocol",
+   "mediana": NaN,
+   "media": 16.62997358835645,
+   "desvio": 1.988836307713826,
+   "escala": 1.988836307713826,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "flow_duration",
+   "mediana": NaN,
+   "media": 4540482.27770858,
+   "desvio": 12810776.020580396,
+   "escala": 12810776.020580396,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "total_fwd_packets",
+   "mediana": NaN,
+   "media": 18.359033287099738,
+   "desvio": 601.6669385291011,
+   "escala": 601.6669385291011,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "total_backward_packets",
+   "mediana": NaN,
+   "media": 0.08933260977532362,
+   "desvio": 3.6732034888548513,
+   "escala": 3.6732034888548513,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "total_length_of_fwd_packets",
+   "mediana": NaN,
+   "media": 6379.800327417669,
+   "desvio": 15725.448485290097,
+   "escala": 15725.448485290097,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "total_length_of_bwd_packets",
+   "mediana": NaN,
+   "media": 36.13258732258064,
+   "desvio": 9826.64831016111,
+   "escala": 9826.64831016111,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "fwd_packet_length_max",
+   "mediana": NaN,
+   "media": 479.2401612722155,
+   "desvio": 181.7957639917052,
+   "escala": 181.7957639917052,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "fwd_packet_length_min",
+   "mediana": NaN,
+   "media": 451.53565717204674,
+   "desvio": 198.80792976415387,
+   "escala": 198.80792976415387,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "fwd_packet_length_mean",
+   "mediana": NaN,
+   "media": 468.76214045462024,
+   "desvio": 185.2446962774087,
+   "escala": 185.2446962774087,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "fwd_packet_length_std",
+   "mediana": NaN,
+   "media": 11.267052116267456,
+   "desvio": 24.127586892549132,
+   "escala": 24.127586892549132,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "bwd_packet_length_max",
+   "mediana": NaN,
+   "media": 2.676415646049825,
+   "desvio": 96.29731206952022,
+   "escala": 96.29731206952022,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "bwd_packet_length_min",
+   "mediana": NaN,
+   "media": 0.26948159958960166,
+   "desvio": 6.584662609011977,
+   "escala": 6.584662609011977,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "bwd_packet_length_mean",
+   "mediana": NaN,
+   "media": 0.8385065315250981,
+   "desvio": 22.651315610671503,
+   "escala": 22.651315610671503,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "bwd_packet_length_std",
+   "mediana": NaN,
+   "media": 0.769929495218061,
+   "desvio": 24.939565621019728,
+   "escala": 24.939565621019728,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "flow_bytes_s",
+   "mediana": 689.5911165696316,
+   "media": 53148891.29169637,
+   "desvio": 293724519.9173357,
+   "escala": 293724519.9173357,
+   "ausentes_treino": 24915,
+   "usa_indicador": 1
+  },
+  {
+   "coluna": "flow_packets_s",
+   "mediana": 1.3374280923427226,
+   "media": 66762.46083199138,
+   "desvio": 308039.0680991554,
+   "escala": 308039.0680991554,
+   "ausentes_treino": 24915,
+   "usa_indicador": 1
+  },
+  {
+   "coluna": "flow_iat_mean",
+   "mediana": NaN,
+   "media": 746309.1937592826,
+   "desvio": 1183759.2365400891,
+   "escala": 1183759.2365400891,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "flow_iat_std",
+   "mediana": NaN,
+   "media": 1124326.6125167727,
+   "desvio": 1739918.8728066706,
+   "escala": 1739918.8728066706,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "flow_iat_max",
+   "mediana": NaN,
+   "media": 2202944.718738219,
+   "desvio": 4241111.064382846,
+   "escala": 4241111.064382846,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "flow_iat_min",
+   "mediana": NaN,
+   "media": 195.0564848765517,
+   "desvio": 61046.066102839344,
+   "escala": 61046.066102839344,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "fwd_iat_total",
+   "mediana": NaN,
+   "media": 4537441.884329378,
+   "desvio": 12809706.78612102,
+   "escala": 12809706.78612102,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "fwd_iat_mean",
+   "mediana": NaN,
+   "media": 761760.6893897709,
+   "desvio": 1258159.0644061705,
+   "escala": 1258159.0644061705,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "fwd_iat_std",
+   "mediana": NaN,
+   "media": 1132001.2632201624,
+   "desvio": 1783560.533115088,
+   "escala": 1783560.533115088,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "fwd_iat_max",
+   "mediana": NaN,
+   "media": 2201032.2982987384,
+   "desvio": 4238903.819678615,
+   "escala": 4238903.819678615,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "fwd_iat_min",
+   "mediana": NaN,
+   "media": 189.30360032276727,
+   "desvio": 61216.43164708827,
+   "escala": 61216.43164708827,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "bwd_iat_total",
+   "mediana": NaN,
+   "media": 169137.15501959893,
+   "desvio": 3503767.334070354,
+   "escala": 3503767.334070354,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "bwd_iat_mean",
+   "mediana": NaN,
+   "media": 36168.50374399445,
+   "desvio": 788209.5861002345,
+   "escala": 788209.5861002345,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "bwd_iat_std",
+   "mediana": NaN,
+   "media": 64087.37791552741,
+   "desvio": 1373533.2375092998,
+   "escala": 1373533.2375092998,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "bwd_iat_max",
+   "mediana": NaN,
+   "media": 127854.44559418205,
+   "desvio": 2643680.327040483,
+   "escala": 2643680.327040483,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "bwd_iat_min",
+   "mediana": NaN,
+   "media": 0.07530412627887688,
+   "desvio": 1.6583284519343113,
+   "escala": 1.6583284519343113,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "fwd_psh_flags",
+   "mediana": NaN,
+   "media": 0.0006958654860286172,
+   "desvio": 0.02637008261750369,
+   "escala": 0.02637008261750369,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "fwd_header_length",
+   "mediana": NaN,
+   "media": -242252702.82258943,
+   "desvio": 3582736270.1876945,
+   "escala": 3582736270.1876945,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "bwd_header_length",
+   "mediana": NaN,
+   "media": -44399.51983174249,
+   "desvio": 9707409.28692635,
+   "escala": 9707409.28692635,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "fwd_packets_s",
+   "mediana": NaN,
+   "media": 66693.36798426227,
+   "desvio": 307963.43307473446,
+   "escala": 307963.43307473446,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "bwd_packets_s",
+   "mediana": NaN,
+   "media": 69.08881228807373,
+   "desvio": 4852.562370058794,
+   "escala": 4852.562370058794,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "min_packet_length",
+   "mediana": NaN,
+   "media": 451.5002079966885,
+   "desvio": 198.73276873506725,
+   "escala": 198.73276873506725,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "max_packet_length",
+   "mediana": NaN,
+   "media": 480.9177379454868,
+   "desvio": 199.5107383696728,
+   "escala": 199.5107383696728,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "packet_length_mean",
+   "mediana": NaN,
+   "media": 468.15531212108533,
+   "desvio": 185.53046250740744,
+   "escala": 185.53046250740744,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "packet_length_std",
+   "mediana": NaN,
+   "media": 11.284973962466632,
+   "desvio": 29.843628025487533,
+   "escala": 29.843628025487533,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "packet_length_variance",
+   "mediana": NaN,
+   "media": 1017.9927710572103,
+   "desvio": 45315.857064575466,
+   "escala": 45315.857064575466,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "syn_flag_count",
+   "mediana": NaN,
+   "media": 5.074271469648287e-05,
+   "desvio": 0.007123211345551117,
+   "escala": 0.007123211345551117,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "ack_flag_count",
+   "mediana": NaN,
+   "media": 0.029998148314778737,
+   "desvio": 0.17058211926360606,
+   "escala": 0.17058211926360606,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "urg_flag_count",
+   "mediana": NaN,
+   "media": 0.003318016461227298,
+   "desvio": 0.05750658421424747,
+   "escala": 0.05750658421424747,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "cwe_flag_count",
+   "mediana": NaN,
+   "media": 0.002089897440375191,
+   "desvio": 0.04566760086827312,
+   "escala": 0.04566760086827312,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "down_up_ratio",
+   "mediana": NaN,
+   "media": 0.009581653565801977,
+   "desvio": 0.1313723270538457,
+   "escala": 0.1313723270538457,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "average_packet_size",
+   "mediana": NaN,
+   "media": 566.8749418343784,
+   "desvio": 282.06810927491426,
+   "escala": 282.06810927491426,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "avg_fwd_segment_size",
+   "mediana": NaN,
+   "media": 468.76214045462024,
+   "desvio": 185.2446962774087,
+   "escala": 185.2446962774087,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "avg_bwd_segment_size",
+   "mediana": NaN,
+   "media": 0.8385065315250981,
+   "desvio": 22.651315610671503,
+   "escala": 22.651315610671503,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "init_win_bytes_forward",
+   "mediana": NaN,
+   "media": 245.7853775724225,
+   "desvio": 2260.861566267573,
+   "escala": 2260.861566267573,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "init_win_bytes_backward",
+   "mediana": NaN,
+   "media": 26.84855927627083,
+   "desvio": 993.2180555816076,
+   "escala": 993.2180555816076,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "act_data_pkt_fwd",
+   "mediana": NaN,
+   "media": 13.229156521655938,
+   "desvio": 32.775868235591496,
+   "escala": 32.775868235591496,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "min_seg_size_forward",
+   "mediana": NaN,
+   "media": -63471837.23304373,
+   "desvio": 251849123.442737,
+   "escala": 251849123.442737,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "active_mean",
+   "mediana": NaN,
+   "media": 3717.9695239592197,
+   "desvio": 153376.23402529422,
+   "escala": 153376.23402529422,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "active_std",
+   "mediana": NaN,
+   "media": 1340.7195388369425,
+   "desvio": 59967.90620798472,
+   "escala": 59967.90620798472,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "active_max",
+   "mediana": NaN,
+   "media": 5792.818375596121,
+   "desvio": 198812.31802402233,
+   "escala": 198812.31802402233,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "active_min",
+   "mediana": NaN,
+   "media": 2976.9210466369145,
+   "desvio": 144531.72075969298,
+   "escala": 144531.72075969298,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "idle_mean",
+   "mediana": NaN,
+   "media": 474436.34643752634,
+   "desvio": 3108031.1419198415,
+   "escala": 3108031.1419198415,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "idle_std",
+   "mediana": NaN,
+   "media": 124343.83984988215,
+   "desvio": 1028476.9679750714,
+   "escala": 1028476.9679750714,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "idle_max",
+   "mediana": NaN,
+   "media": 641545.3058223451,
+   "desvio": 4215591.875284525,
+   "escala": 4215591.875284525,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "idle_min",
+   "mediana": NaN,
+   "media": 356019.2553582914,
+   "desvio": 2491558.2272053612,
+   "escala": 2491558.2272053612,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  },
+  {
+   "coluna": "inbound",
+   "mediana": NaN,
+   "media": 0.9939548351085815,
+   "desvio": 0.07751529444473554,
+   "escala": 0.07751529444473554,
+   "ausentes_treino": 0,
+   "usa_indicador": 0
+  }
+ ],
+ "sha256": "faae738b0b3fbe5781d8f994d5c5395294769dcb3b413b3a40bd4205811dddce"
+}

@@ -1,0 +1,57 @@
+{
+ "run_id": "20261025_004828",
+ "data": "2026-10-25T01:48:34",
+ "modelo": "SVC (kernel RBF) em Pipeline com StandardScaler",
+ "variante": "sem_auc_svm",
+ "origem": "notebook 11 (busca de hiperparâmetros do SVM)",
+ "hiperparametros": {
+  "kernel": "rbf",
+  "C": 100.0,
+  "gamma": 0.09520944239648896,
+  "gamma_fator": 4.0,
+  "gamma_referencia_scale": 0.02380236059912224,
+  "cache_size": 200,
+  "tol": 0.001
+ },
+ "semente": 42,
+ "limiar_padrao": 0.0,
+ "sem_sementes_no_treino": true,
+ "versao_selecao_notebook04": "20261018_204854",
+ "versao_views_notebook03": "20261018_180729",
+ "dados": {
+  "ajuste": 81228,
+  "validacao": 60154,
+  "refit": 101536,
+  "benign_treino": 50768,
+  "ataques_treino": 8206575,
+  "peso_benign_proporcao_real": 0.030462178395295077
+ },
+ "protocolo": {
+  "k_particoes_validacao": 5,
+  "k_cv_ajuste": 5,
+  "repeticoes_tempo_refit": 3,
+  "n_latencia": 1000,
+  "fpr_alvos": [
+   0.01,
+   0.001
+  ],
+  "n_lote_vazao": 20000,
+  "repeticoes_lote": 2,
+  "processos_previsao": 2
+ },
+ "software": {
+  "scikit-learn": "1.9.1",
+  "numpy": "2.5.3",
+  "pandas": "2.3.3",
+  "joblib": "1.6.0",
+  "psutil": "7.2.2"
+ },
+ "hardware": {
+  "so": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+  "nucleos_logicos": 12,
+  "nucleos_fisicos": 10,
+  "ram_total_gib": 7.692127227783203
+ }
+}

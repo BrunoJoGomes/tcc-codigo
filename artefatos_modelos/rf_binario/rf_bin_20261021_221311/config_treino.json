@@ -1,0 +1,52 @@
+{
+ "run_id": "20261021_221311",
+ "data": "2026-10-21T22:17:04",
+ "modelo": "RandomForestClassifier",
+ "hiperparametros": {
+  "n_estimators": 100,
+  "max_depth": null,
+  "min_samples_split": 2,
+  "min_samples_leaf": 1,
+  "max_features": "sqrt",
+  "random_state": 42,
+  "n_jobs": -1
+ },
+ "semente": 42,
+ "limiar_padrao": 0.5,
+ "versao_selecao_notebook04": "20261018_204854",
+ "versao_views_notebook03": "20261018_180729",
+ "razao_ataque_benigno": 1.0,
+ "dados": {
+  "ajuste": 81228,
+  "validacao": 60154,
+  "refit": 101536,
+  "benign_treino": 50768,
+  "ataques_treino": 8206575,
+  "peso_benign_proporcao_real": 0.030462178395295077
+ },
+ "protocolo": {
+  "k_particoes_validacao": 5,
+  "k_cv_ajuste": 5,
+  "repeticoes_tempo_refit": 3,
+  "n_latencia": 1000,
+  "fpr_alvos": [
+   0.01,
+   0.001
+  ]
+ },
+ "software": {
+  "scikit-learn": "1.9.1",
+  "numpy": "2.5.3",
+  "pandas": "2.3.3",
+  "joblib": "1.6.0",
+  "psutil": "7.2.2"
+ },
+ "hardware": {
+  "so": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+  "nucleos_logicos": 12,
+  "nucleos_fisicos": 10,
+  "ram_total_gib": 7.692127227783203
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "run_id": "20261021_221311",
+ "n_teste": 7219189,
+ "limiar_padrao": 0.5,
+ "metricas": {
+  "limiar 0.5": {
+   "acuracia": 0.9513304056729918,
+   "acuracia_balanceada": 0.9650790042748181,
+   "precisao": 0.999827119974335,
+   "recall": 0.9511128968376679,
+   "especificidade": 0.9790451117119682,
+   "taxa_falso_alarme": 0.020954888288031825,
+   "taxa_perda": 0.048887103162332135,
+   "f1": 0.9748618206822991,
+   "mcc": 0.3552142371753607,
+   "precisao_benign": 0.1358241920955542,
+   "f1_benign": 0.2385535432166456,
+   "f1_macro": 0.6067076819494723,
+   "pr_auc_benign": 0.9727587560495887,
+   "roc_auc": 0.9899326519226804,
+   "pr_auc": 0.9998867128480523,
+   "tp": 6812796.0,
+   "fp": 1178.0,
+   "tn": 55038.0,
+   "fn": 350177.0
+  },
+  "limiar da validação p/ falso alarme 1.0% (0.050)": {
+   "acuracia": 0.9979108456642429,
+   "acuracia_balanceada": 0.8660596582185491,
+   "precisao": 0.997902064486127,
+   "recall": 0.999996789042762,
+   "especificidade": 0.7321225273943361,
+   "taxa_falso_alarme": 0.26787747260566386,
+   "taxa_perda": 3.210957237986811e-06,
+   "f1": 0.9989483286430454,
+   "mcc": 0.8545024701189347,
+   "precisao_benign": 0.9994414764448761,
+   "f1_benign": 0.8451476446671321,
+   "f1_macro": 0.9220479866550888,
+   "pr_auc_benign": 0.9727587560495887,
+   "roc_auc": 0.9899326519226804,
+   "pr_auc": 0.9998867128480523,
+   "tp": 7162950.0,
+   "fp": 15059.0,
+   "tn": 41157.0,
+   "fn": 23.0
+  },
+  "limiar da validação p/ falso alarme 0.1% (0.460)": {
+   "acuracia": 0.9990311931160134,
+   "acuracia_balanceada": 0.9863456982458773,
+   "precisao": 0.9997915899272003,
+   "recall": 0.9992318831859341,
+   "especificidade": 0.9734595133058204,
+   "taxa_falso_alarme": 0.026540486694179632,
+   "taxa_perda": 0.0007681168140658556,
+   "f1": 0.9995116582003998,
+   "mcc": 0.9400146737460792,
+   "precisao_benign": 0.9086441071962276,
+   "f1_benign": 0.9399357620102713,
+   "f1_macro": 0.9697237101053355,
+   "pr_auc_benign": 0.9727587560495887,
+   "roc_auc": 0.9899326519226804,
+   "pr_auc": 0.9998867128480523,
+   "tp": 7157471.0,
+   "fp": 1492.0,
+   "tn": 54724.0,
+   "fn": 5502.0
+  }
+ },
+ "linha_de_base_pr_auc_benign": 0.0077870242765496235,
+ "pontos_informativos_no_teste": [
+  {
+   "alvo_fpr": 0.01,
+   "limiar_no_teste": 0.7400000095367432,
+   "recall": 0.3492668477181193,
+   "fpr": 0.009107727337412837
+  },
+  {
+   "alvo_fpr": 0.001,
+   "limiar_no_teste": 0.9700000286102295,
+   "recall": 0.31771444622225997,
+   "fpr": 0.00064038707841184
+  }
+ ],
+ "limiares_da_validacao": [
+  {
+   "alvo_fpr": 0.01,
+   "limiar": 0.05,
+   "recall": 0.99994,
+   "fpr_obtida": 0.008371085286586567,
+   "precisao_real": 0.9999482138713414,
+   "f1_real": 0.9999441069188029,
+   "mcc_real": 0.9909153222624385,
+   "precisao_benign_real": 0.9903139467554551,
+   "f1_benign_real": 0.9909709945107762
+  },
+  {
+   "alvo_fpr": 0.001,
+   "limiar": 0.46,
+   "recall": 0.99928,
+   "fpr_obtida": 0.0009848335631278313,
+   "precisao_real": 0.9999939032117777,
+   "f1_real": 0.9996368241451654,
+   "mcc_real": 0.9455800690866102,
+   "precisao_benign_real": 0.8956546956341419,
+   "f1_benign_real": 0.9445156042655958
+  }
+ ],
+ "observacao": "teste sem sobreposição com o treino, sem balancear e sem pesos"
+}

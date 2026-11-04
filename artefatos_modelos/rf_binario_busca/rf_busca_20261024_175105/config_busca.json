@@ -1,0 +1,100 @@
+{
+ "run_id": "20261024_175105",
+ "impressao": "d216a842559b",
+ "retomada": false,
+ "criado_em": "2026-10-24T17:51:05",
+ "concluido_em": "2026-10-24T19:08:15",
+ "tempo_busca": {
+  "relogio_s": 4138.950529800262,
+  "sessoes": 1,
+  "treino_somado_s": 3961.3071550019085,
+  "florestas": 162,
+  "detalhe_sessoes": [
+   {
+    "inicio": "2026-10-24T17:51:06",
+    "fim": "2026-10-24T19:00:05",
+    "relogio_s": 4138.950529800262,
+    "unidades_novas": 27,
+    "florestas_novas": 162,
+    "interrompida": false
+   }
+  ]
+ },
+ "grade": {
+  "n_estimators": [
+   100,
+   300,
+   500
+  ],
+  "max_depth": [
+   null,
+   15,
+   8
+  ],
+  "min_samples_leaf": [
+   1,
+   5,
+   10
+  ]
+ },
+ "sementes": [
+  42,
+  43,
+  44
+ ],
+ "k_cv": 5,
+ "semente_dobras": 42,
+ "tamanhos_avaliados": [
+  25,
+  50,
+  100,
+  200,
+  300,
+  400,
+  500
+ ],
+ "n_florestas": 162,
+ "fixos": {
+  "min_samples_split": 2,
+  "max_features": "sqrt",
+  "n_jobs": -1
+ },
+ "regra": {
+  "metricas": [
+   "roc_auc",
+   "mcc_real"
+  ],
+  "mult_erro_padrao": 1.0,
+  "desempate": "menos nós, depois menos árvores, depois folha maior"
+ },
+ "tipos": [
+  "BENIGN",
+  "DNS",
+  "LDAP",
+  "MSSQL",
+  "NTP",
+  "NetBIOS",
+  "SNMP",
+  "SSDP",
+  "Syn",
+  "TFTP",
+  "UDP",
+  "UDPLag",
+  "WebDDoS"
+ ],
+ "software": {
+  "scikit-learn": "1.9.1",
+  "numpy": "2.5.3",
+  "pandas": "2.3.3",
+  "joblib": "1.6.0",
+  "psutil": "7.2.2"
+ },
+ "hardware": {
+  "so": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+  "nucleos_logicos": 12,
+  "nucleos_fisicos": 10,
+  "ram_total_gib": 7.692127227783203
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "limiar_padrao": 0.0,
+ "configuracao": "padrão (C = 1, gamma = 1× o de referência)",
+ "pontos_de_operacao_validacao": [
+  {
+   "alvo_fpr": 0.01,
+   "limiar": -0.8442924618721008,
+   "recall": 0.99542,
+   "fpr_obtida": 0.009749852274965531,
+   "precisao_real": 0.9999394110437876,
+   "f1_real": 0.9976745873772453,
+   "mcc_real": 0.7509600538876164,
+   "precisao_benign_real": 0.5722002685807701,
+   "f1_benign_real": 0.7252984089314131
+  },
+  {
+   "alvo_fpr": 0.001,
+   "limiar": 1.0031490325927734,
+   "recall": 0.9249,
+   "fpr_obtida": 0.0009848335631278313,
+   "precisao_real": 0.9999934129143176,
+   "f1_real": 0.9609819446617037,
+   "mcc_real": 0.2650361041972336,
+   "precisao_benign_real": 0.07603536015902325,
+   "f1_benign_real": 0.14131517748264344
+  }
+ ]
+}

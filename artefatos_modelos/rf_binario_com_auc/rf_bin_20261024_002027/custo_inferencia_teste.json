@@ -1,0 +1,33 @@
+{
+ "inferencia_teste": [
+  {
+   "n_jobs": 1,
+   "n_latencia": 1000,
+   "latencia_modelo_p50_ms": 13.300049817189574,
+   "latencia_modelo_p95_ms": 30.908884876407654,
+   "latencia_modelo_p99_ms": 49.3174861324951,
+   "latencia_fim_a_fim_p50_ms": 13.469049939885736,
+   "latencia_fim_a_fim_p95_ms": 31.482949876226478,
+   "latencia_fim_a_fim_p99_ms": 49.90138215012848,
+   "vazao_modelo_fluxos_s": 136524.34147095424,
+   "vazao_fim_a_fim_fluxos_s": 130421.65899236813,
+   "n_lote": 49690
+  },
+  {
+   "n_jobs": -1,
+   "n_latencia": 1000,
+   "latencia_modelo_p50_ms": 51.748800091445446,
+   "latencia_modelo_p95_ms": 70.28533990960565,
+   "latencia_modelo_p99_ms": 92.6949847349897,
+   "latencia_fim_a_fim_p50_ms": 51.86829995363951,
+   "latencia_fim_a_fim_p95_ms": 70.44466517399994,
+   "latencia_fim_a_fim_p99_ms": 92.9952035890892,
+   "vazao_modelo_fluxos_s": 297183.3074081745,
+   "vazao_fim_a_fim_fluxos_s": 217338.81781540328,
+   "n_lote": 49690
+  }
+ ],
+ "vazao_dados_reais_fluxos_s": 323512.07925652154,
+ "tempo_previsao_total_s": 22.315052398014814,
+ "n_jobs_modelo": -1
+}

@@ -1,0 +1,147 @@
+{
+ "run_id": "20261024_224947",
+ "data": "2026-10-24T23:04:05",
+ "hardware": {
+  "so": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+  "nucleos_logicos": 12,
+  "nucleos_fisicos": 10,
+  "ram_total_gib": 7.692127227783203,
+  "ram_livre_no_inicio_gib": 1.3490867614746094
+ },
+ "software": {
+  "scikit-learn": "1.9.1",
+  "numpy": "2.5.3",
+  "pandas": "2.3.3",
+  "joblib": "1.6.0",
+  "psutil": "7.2.2"
+ },
+ "normalizador": {
+  "escolhido": "StandardScaler só nas colunas numéricas, ajustado no próprio treino; indicadores _ausente em 0/1",
+  "n_numericas": 42,
+  "n_indicadores": 1
+ },
+ "parametros": {
+  "tamanhos": [
+   10000,
+   20000,
+   40000,
+   null
+  ],
+  "processos": [
+   1,
+   2,
+   4,
+   6,
+   8
+  ],
+  "c_valores": [
+   0.1,
+   1.0,
+   10.0,
+   100.0
+  ],
+  "gamma_fatores": [
+   0.25,
+   1.0,
+   4.0
+  ],
+  "cache_mb": 200,
+  "orcamento_fit_s": 1200,
+  "orcamento_sens_s": 90
+ },
+ "medidas": {
+  "maior_tamanho_medido": 81228,
+  "expoente_tempo": 2.883273817588767,
+  "expoente_vetores_suporte": 0.6480385840218922,
+  "ns_por_par": 201.7734896624138,
+  "expoentes_supostos": false,
+  "amostra_sensibilidade": 40000,
+  "gamma_scale": 0.023802201167185993,
+  "fator_tempo_na_grade": 2.436572157418462,
+  "processos_recomendados_treino": 1,
+  "ganho_treino": {
+   "1": 1.0
+  },
+  "processos_recomendados_previsao": 2,
+  "ganho_previsao": {
+   "1": 1.0,
+   "2": 1.8373100967798934,
+   "4": 1.8380369447704692,
+   "6": 2.170467817220252,
+   "8": 2.026033600418898
+  }
+ },
+ "estimativas": {
+  "busca_val": {
+   "item": "Busca com validação separada (9 treinos)",
+   "treinos": 9,
+   "tamanho de cada": "81,228",
+   "1_processo_s": 1549.7359833676883,
+   "paralelo_s": 1549.7359833676883,
+   "extrapolado": false,
+   "processos_paralelo": 1
+  },
+  "busca_cv": {
+   "item": "Busca com CV de 5 dobras (45 treinos)",
+   "treinos": 45,
+   "tamanho de cada": "64,982",
+   "1_processo_s": 3742.2426275022785,
+   "paralelo_s": 3742.2426275022785,
+   "extrapolado": false,
+   "processos_paralelo": 1
+  },
+  "refit": {
+   "item": "Refit (1 treino)",
+   "treinos": 1,
+   "tamanho de cada": "101,536",
+   "1_processo_s": 279.88617696232205,
+   "paralelo_s": 279.88617696232205,
+   "extrapolado": true,
+   "processos_paralelo": 1
+  },
+  "teste": {
+   "item": "Previsão do teste (7,219,189 linhas)",
+   "treinos": 1,
+   "tamanho de cada": "2,391 vetores de suporte",
+   "1_processo_s": 3482.8920219821457,
+   "paralelo_s": 1895.6473532074592,
+   "extrapolado": true,
+   "processos_paralelo": 1
+  },
+  "mc_fit": {
+   "item": "Multiclasse: 1 treino completo (21 pares de 100 mil)",
+   "treinos": 1,
+   "tamanho de cada": "21 × 100,000",
+   "1_processo_s": 5624.8808416117145,
+   "paralelo_s": 5624.8808416117145,
+   "extrapolado": true,
+   "processos_paralelo": 1
+  },
+  "mc_cv": {
+   "item": "Multiclasse: CV de 5 dobras (45 treinos de 21 pares de 80 mil)",
+   "treinos": 45,
+   "tamanho de cada": "21 × 80,000",
+   "1_processo_s": 133017.18027174563,
+   "paralelo_s": 133017.18027174563,
+   "extrapolado": false,
+   "processos_paralelo": 1
+  },
+  "mc_reduzido": {
+   "item": "Multiclasse, plano reduzido: 9 treinos em ~100 mil linhas + 1 refit completo",
+   "treinos": 10,
+   "tamanho de cada": "21 × 28,571 (e 100,000 no refit)",
+   "1_processo_s": 6991.476088564955,
+   "paralelo_s": 6991.476088564955,
+   "extrapolado": true,
+   "processos_paralelo": 1
+  }
+ },
+ "recomendacao_protocolo_binario": "cv5",
+ "limites_h": {
+  "busca": 6.0,
+  "teste": 1.5
+ },
+ "observacao": "calibração de custo; não escolhe hiperparâmetros. ROC-AUC, recall e falso alarme da validação são informativos"
+}

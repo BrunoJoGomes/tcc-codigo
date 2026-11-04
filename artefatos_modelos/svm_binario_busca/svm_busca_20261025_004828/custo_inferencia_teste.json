@@ -1,0 +1,39 @@
+{
+ "inferencia_teste": [
+  {
+   "n_jobs": 1,
+   "n_latencia": 1000,
+   "latencia_modelo_p50_ms": 1.3707499019801617,
+   "latencia_modelo_p95_ms": 1.669695018790662,
+   "latencia_modelo_p99_ms": 2.3045048536732793,
+   "latencia_fim_a_fim_p50_ms": 1.4103499706834555,
+   "latencia_fim_a_fim_p95_ms": 1.7227200558409088,
+   "latencia_fim_a_fim_p99_ms": 2.3761310474947095,
+   "vazao_modelo_fluxos_s": 2559.845533645145,
+   "vazao_fim_a_fim_fluxos_s": 2519.6755266143014,
+   "n_lote": 20000
+  },
+  {
+   "n_jobs": 2,
+   "n_latencia": 1000,
+   "latencia_modelo_p50_ms": null,
+   "latencia_modelo_p95_ms": null,
+   "latencia_modelo_p99_ms": null,
+   "latencia_fim_a_fim_p50_ms": null,
+   "latencia_fim_a_fim_p95_ms": null,
+   "latencia_fim_a_fim_p99_ms": null,
+   "vazao_modelo_fluxos_s": 5716.144796990757,
+   "vazao_fim_a_fim_fluxos_s": 5701.045422308447,
+   "n_lote": 20000
+  }
+ ],
+ "vazao_dados_reais_fluxos_s": 5880.943200189723,
+ "tempo_previsao_total_s": 1227.5563211981207,
+ "processos_previsao": 2,
+ "n_vetores_suporte": 2661,
+ "padrao": {
+  "vazao_dados_reais_fluxos_s": 6146.693542419178,
+  "tempo_previsao_total_s": 1174.4833137001842,
+  "n_vetores_suporte": 2539
+ }
+}

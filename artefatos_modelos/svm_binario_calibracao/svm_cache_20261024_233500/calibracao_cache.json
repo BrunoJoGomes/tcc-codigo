@@ -1,0 +1,34 @@
+{
+ "run_id": "20261024_233500",
+ "data": "2026-10-24T23:45:22",
+ "hardware": {
+  "so": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "nucleos_logicos": 12,
+  "nucleos_fisicos": 10,
+  "ram_total_gib": 7.692127227783203
+ },
+ "tamanho_testado": 81228,
+ "caches_mb": [
+  1500,
+  1000,
+  500,
+  200
+ ],
+ "cache_recomendado_mb": 200,
+ "tempo_com_cache_recomendado_s": 264.1935562998988,
+ "n_sv": 2152.0,
+ "treinos_simultaneos_recomendados": 1,
+ "ganho_treino": {
+  "1": 1.0
+ },
+ "expoente_tempo_suposto": 1.5,
+ "estimativas_horas": {
+  "busca_val": 0.7257835465844291,
+  "busca_cv": 2.4393236032405876,
+  "refit": 0.1025631039030949,
+  "teste": 0.5476637818176756
+ },
+ "calibracao_usada": "C:\\Users\\Bruno\\downloads\\tcc_codigo\\railway-ch\\artefatos_modelos\\svm_binario_calibracao\\svm_cal_20261024_224947\\calibracao_svm.json",
+ "observacao": "complemento da calibração: testa a hipótese de que o cache de 200 MiB era o gargalo do treino com 81 mil linhas"
+}

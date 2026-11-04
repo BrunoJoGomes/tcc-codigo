@@ -1,0 +1,217 @@
+{
+ "run_id": "20261101_220723",
+ "data_teste": "2026-11-01T23:18:49",
+ "n_teste": 7216487,
+ "classes": [
+  "BENIGN",
+  "LDAP",
+  "MSSQL",
+  "NetBIOS",
+  "Syn",
+  "UDP",
+  "UDPLag"
+ ],
+ "metricas": {
+  "acuracia": 0.3569677323606347,
+  "acuracia_balanceada": 0.6889510786060914,
+  "precisao_macro": 0.6990190923521468,
+  "f1_macro": 0.5559595583070119,
+  "f1_ponderado": 0.4640765089311035,
+  "mcc": 0.4218887886705307,
+  "roc_auc_ovr_macro": 0.9170034676845596
+ },
+ "metricas_sem_classe_especial": {
+  "classe": "UDPLag",
+  "f1_macro": 0.6485995429980833,
+  "acuracia_balanceada": 0.730766084825
+ },
+ "por_classe": {
+  "BENIGN": {
+   "linhas no teste": 56216,
+   "% do teste": 0.7789939897348945,
+   "recall": 0.9872989896114985,
+   "IC95% recall (inf.)": 0.98633942599671,
+   "IC95% recall (sup.)": 0.9881919572436157,
+   "precisão": 0.9709597284909556,
+   "F1": 0.979061193529609,
+   "ROC-AUC um-contra-resto": 0.9948150411547136,
+   "previstas como a classe": 57162
+  },
+  "LDAP": {
+   "linhas no teste": 112491,
+   "% do teste": 1.5588055517871784,
+   "recall": 0.9637393213679316,
+   "IC95% recall (inf.)": 0.9626309556354372,
+   "IC95% recall (sup.)": 0.9648160145196815,
+   "precisão": 0.7840998676435489,
+   "F1": 0.864688100688324,
+   "ROC-AUC um-contra-resto": 0.9965755891866974,
+   "previstas como a classe": 138263
+  },
+  "MSSQL": {
+   "linhas no teste": 854242,
+   "% do teste": 11.837366297479646,
+   "recall": 0.36493288787018197,
+   "IC95% recall (inf.)": 0.3639126003979816,
+   "IC95% recall (sup.)": 0.36595439015383985,
+   "precisão": 0.9913219067001622,
+   "F1": 0.5334778799225129,
+   "ROC-AUC um-contra-resto": 0.9179409375320227,
+   "previstas como a classe": 314470
+  },
+  "NetBIOS": {
+   "linhas no teste": 91175,
+   "% do teste": 1.2634263735249576,
+   "recall": 0.999012887304634,
+   "IC95% recall (inf.)": 0.9987869465454265,
+   "IC95% recall (sup.)": 0.9991967786612775,
+   "precisão": 0.14713293897581195,
+   "F1": 0.2564904025534994,
+   "ROC-AUC um-contra-resto": 0.9958616902237827,
+   "previstas como a classe": 619066
+  },
+  "Syn": {
+   "linhas no teste": 4887060,
+   "% do teste": 67.72076219357147,
+   "recall": 0.1932736655576154,
+   "IC95% recall (inf.)": 0.19292381511891257,
+   "IC95% recall (sup.)": 0.19362399821628698,
+   "precisão": 0.999898373553411,
+   "F1": 0.3239332091384736,
+   "ROC-AUC um-contra-resto": 0.9982089525025066,
+   "previstas como a classe": 944636
+  },
+  "UDP": {
+   "linhas no teste": 1214746,
+   "% do teste": 16.83292715693938,
+   "recall": 0.8763387572381387,
+   "IC95% recall (inf.)": 0.8757521486974529,
+   "IC95% recall (sup.)": 0.8769229854649192,
+   "precisão": 0.9996609978495431,
+   "F1": 0.9339464721560811,
+   "ROC-AUC um-contra-resto": 0.9953998032716127,
+   "previstas como a classe": 1064890
+  },
+  "UDPLag": {
+   "linhas no teste": 557,
+   "% do teste": 0.007718436962472183,
+   "recall": 0.4380610412926391,
+   "IC95% recall (inf.)": 0.3974203805091279,
+   "IC95% recall (sup.)": 0.4795502293743044,
+   "precisão": 5.9833251593918585e-05,
+   "F1": 0.00011965016058375548,
+   "ROC-AUC um-contra-resto": 0.5202222599205821,
+   "previstas como a classe": 4078000
+  }
+ },
+ "matriz_confusao": {
+  "real BENIGN": {
+   "prev. BENIGN": 55502,
+   "prev. LDAP": 141,
+   "prev. MSSQL": 7,
+   "prev. NetBIOS": 417,
+   "prev. Syn": 77,
+   "prev. UDP": 4,
+   "prev. UDPLag": 68
+  },
+  "real LDAP": {
+   "prev. BENIGN": 107,
+   "prev. LDAP": 108412,
+   "prev. MSSQL": 250,
+   "prev. NetBIOS": 3697,
+   "prev. Syn": 5,
+   "prev. UDP": 3,
+   "prev. UDPLag": 17
+  },
+  "real MSSQL": {
+   "prev. BENIGN": 164,
+   "prev. LDAP": 29565,
+   "prev. MSSQL": 311741,
+   "prev. NetBIOS": 512196,
+   "prev. Syn": 0,
+   "prev. UDP": 234,
+   "prev. UDPLag": 342
+  },
+  "real NetBIOS": {
+   "prev. BENIGN": 33,
+   "prev. LDAP": 11,
+   "prev. MSSQL": 16,
+   "prev. NetBIOS": 91085,
+   "prev. Syn": 4,
+   "prev. UDP": 5,
+   "prev. UDPLag": 21
+  },
+  "real Syn": {
+   "prev. BENIGN": 1265,
+   "prev. LDAP": 118,
+   "prev. MSSQL": 614,
+   "prev. NetBIOS": 2479,
+   "prev. Syn": 944540,
+   "prev. UDP": 61,
+   "prev. UDPLag": 3937983
+  },
+  "real UDP": {
+   "prev. BENIGN": 57,
+   "prev. LDAP": 10,
+   "prev. MSSQL": 1805,
+   "prev. NetBIOS": 9018,
+   "prev. Syn": 2,
+   "prev. UDP": 1064529,
+   "prev. UDPLag": 139325
+  },
+  "real UDPLag": {
+   "prev. BENIGN": 34,
+   "prev. LDAP": 6,
+   "prev. MSSQL": 37,
+   "prev. NetBIOS": 174,
+   "prev. Syn": 8,
+   "prev. UDP": 54,
+   "prev. UDPLag": 244
+  }
+ },
+ "validacao_vs_teste": {
+  "roc_auc_ovr_macro": {
+   "validação (sem pesos)": 0.9901086802592688,
+   "teste": 0.9170034676845596,
+   "Δ": -0.07310521257470914
+  },
+  "acuracia_balanceada": {
+   "validação (sem pesos)": 0.9028561178100413,
+   "teste": 0.6889510786060914,
+   "Δ": -0.21390503920394988
+  },
+  "acuracia": {
+   "validação (sem pesos)": 0.9127641109516339,
+   "teste": 0.3569677323606347,
+   "Δ": -0.5557963785909992
+  },
+  "precisao_macro": {
+   "validação (sem pesos)": 0.8992743724377863,
+   "teste": 0.6990190923521468,
+   "Δ": -0.20025528008563953
+  },
+  "f1_macro": {
+   "validação (sem pesos)": 0.9008824016698893,
+   "teste": 0.5559595583070119,
+   "Δ": -0.3449228433628774
+  },
+  "f1_ponderado": {
+   "validação (sem pesos)": 0.9128298248993879,
+   "teste": 0.4640765089311035,
+   "Δ": -0.4487533159682844
+  },
+  "mcc": {
+   "validação (sem pesos)": 0.8970376378370298,
+   "teste": 0.4218887886705307,
+   "Δ": -0.47514884916649913
+  }
+ },
+ "classes_desconhecidas": {
+  "Portmap": 2702
+ },
+ "custo": {
+  "vazao_dados_reais_fluxos_s": 140496.27332783918,
+  "tempo_previsao_total_s": 51.36425920110196,
+  "tempo_teste_relogio_s": 269.8
+ }
+}

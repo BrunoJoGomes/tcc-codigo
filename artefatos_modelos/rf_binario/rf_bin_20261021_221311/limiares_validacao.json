@@ -1,0 +1,27 @@
+{
+ "limiar_padrao": 0.5,
+ "pontos_de_operacao_validacao": [
+  {
+   "alvo_fpr": 0.01,
+   "limiar": 0.05,
+   "recall": 0.99994,
+   "fpr_obtida": 0.008371085286586567,
+   "precisao_real": 0.9999482138713414,
+   "f1_real": 0.9999441069188029,
+   "mcc_real": 0.9909153222624385,
+   "precisao_benign_real": 0.9903139467554551,
+   "f1_benign_real": 0.9909709945107762
+  },
+  {
+   "alvo_fpr": 0.001,
+   "limiar": 0.46,
+   "recall": 0.99928,
+   "fpr_obtida": 0.0009848335631278313,
+   "precisao_real": 0.9999939032117777,
+   "f1_real": 0.9996368241451654,
+   "mcc_real": 0.9455800690866102,
+   "precisao_benign_real": 0.8956546956341419,
+   "f1_benign_real": 0.9445156042655958
+  }
+ ]
+}

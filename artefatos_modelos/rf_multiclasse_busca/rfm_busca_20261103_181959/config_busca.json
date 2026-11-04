@@ -1,0 +1,27 @@
+{
+ "run_id": "20261103_181959",
+ "criado_em": "2026-11-03T18:19:59",
+ "impressao": "06a102b4b657",
+ "grade": {
+  "n_estimators": [
+   100,
+   300,
+   500
+  ],
+  "max_depth": [
+   null,
+   15,
+   8
+  ],
+  "min_samples_leaf": [
+   1,
+   5,
+   10
+  ]
+ },
+ "sementes": [
+  42,
+  43,
+  44
+ ]
+}

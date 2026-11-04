@@ -1,0 +1,119 @@
+{
+ "run_id": "20261101_210334",
+ "data": "2026-11-01T21:15:10",
+ "modelo": "RandomForestClassifier (multiclasse)",
+ "hiperparametros": {
+  "n_estimators": 100,
+  "max_depth": null,
+  "min_samples_split": 2,
+  "min_samples_leaf": 1,
+  "max_features": "sqrt",
+  "class_weight": "balanced",
+  "random_state": 42,
+  "n_jobs": -1
+ },
+ "semente": 42,
+ "previsao": "classe de maior probabilidade (argmax)",
+ "versao_selecao_notebook04": "20261027_173009",
+ "versao_views_notebook03": "20261026_010742",
+ "classes": {
+  "nomes": [
+   "BENIGN",
+   "LDAP",
+   "MSSQL",
+   "NetBIOS",
+   "Syn",
+   "UDP",
+   "UDPLag"
+  ],
+  "codigos": {
+   "BENIGN": 0,
+   "LDAP": 1,
+   "MSSQL": 2,
+   "NetBIOS": 3,
+   "Syn": 4,
+   "UDP": 5,
+   "UDPLag": 6
+  }
+ },
+ "pesos_classe_balanced_ajuste": {
+  "BENIGN": 0.8559678571428572,
+  "LDAP": 1.4219325672043808,
+  "MSSQL": 0.8559678571428572,
+  "NetBIOS": 2.1959154877959395,
+  "Syn": 0.8559678571428572,
+  "UDP": 0.8559678571428572,
+  "UDPLag": 0.8559678571428572
+ },
+ "pesos_classe_balanced_refit": {
+  "BENIGN": 0.8559685714285714,
+  "LDAP": 1.4219219433013912,
+  "MSSQL": 0.8559685714285714,
+  "NetBIOS": 2.195917320237484,
+  "Syn": 0.8559685714285714,
+  "UDP": 0.8559685714285714,
+  "UDPLag": 0.8559685714285714
+ },
+ "dados": {
+  "ajuste": 239671,
+  "validacao": 59918,
+  "refit": 299589,
+  "linhas_treino_por_classe": {
+   "BENIGN": 50768,
+   "LDAP": 30099,
+   "MSSQL": 207003,
+   "NetBIOS": 19490,
+   "Syn": 155515,
+   "UDP": 1075337,
+   "UDPLag": 89066
+  },
+  "ajuste_por_classe": {
+   "BENIGN": 40000,
+   "LDAP": 24079,
+   "MSSQL": 40000,
+   "NetBIOS": 15592,
+   "Syn": 40000,
+   "UDP": 40000,
+   "UDPLag": 40000
+  },
+  "validacao_por_classe": {
+   "BENIGN": 10000,
+   "LDAP": 6020,
+   "MSSQL": 10000,
+   "NetBIOS": 3898,
+   "Syn": 10000,
+   "UDP": 10000,
+   "UDPLag": 10000
+  },
+  "usadas_por_classe": {
+   "BENIGN": 50000,
+   "LDAP": 30099,
+   "MSSQL": 50000,
+   "NetBIOS": 19490,
+   "Syn": 50000,
+   "UDP": 50000,
+   "UDPLag": 50000
+  }
+ },
+ "protocolo": {
+  "k_particoes_validacao": 5,
+  "k_cv_ajuste": 5,
+  "repeticoes_tempo_refit": 3,
+  "n_latencia": 1000
+ },
+ "software": {
+  "scikit-learn": "1.9.1",
+  "numpy": "2.5.3",
+  "pandas": "2.3.3",
+  "joblib": "1.6.0",
+  "psutil": "7.2.2"
+ },
+ "hardware": {
+  "so": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+  "nucleos_logicos": 12,
+  "nucleos_fisicos": 10,
+  "ram_total_gib": 7.692127227783203
+ }
+}

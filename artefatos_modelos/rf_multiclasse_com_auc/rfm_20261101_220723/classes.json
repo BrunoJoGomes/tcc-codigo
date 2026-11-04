@@ -1,0 +1,20 @@
+{
+ "classes": [
+  "BENIGN",
+  "LDAP",
+  "MSSQL",
+  "NetBIOS",
+  "Syn",
+  "UDP",
+  "UDPLag"
+ ],
+ "codigos": {
+  "BENIGN": 0,
+  "LDAP": 1,
+  "MSSQL": 2,
+  "NetBIOS": 3,
+  "Syn": 4,
+  "UDP": 5,
+  "UDPLag": 6
+ }
+}

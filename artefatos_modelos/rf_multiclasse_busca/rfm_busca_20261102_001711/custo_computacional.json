@@ -1,0 +1,110 @@
+{
+ "fit_ajuste": {
+  "relogio_s": 39.32085039978847,
+  "cpu_s": 279.21875,
+  "pico_ram_mib": 935.98046875,
+  "acrescimo_ram_mib": 332.66015625
+ },
+ "fit_refit": {
+  "repeticoes": 3,
+  "relogio_mediana_s": 48.511220700107515,
+  "relogio_min_s": 47.120866999961436,
+  "relogio_max_s": 54.40938389999792,
+  "cpu_mediana_s": 345.78125,
+  "pico_ram_max_mib": 1156.46875,
+  "acrescimo_ram_max_mib": 413.7578125
+ },
+ "fit_refit_repeticoes": [
+  {
+   "repeticao": 1,
+   "relogio_s": 54.40938389999792,
+   "cpu_s": 361.375,
+   "pico_ram_mib": 1011.234375,
+   "acrescimo_ram_mib": 413.7578125
+  },
+  {
+   "repeticao": 2,
+   "relogio_s": 48.511220700107515,
+   "cpu_s": 345.78125,
+   "pico_ram_mib": 1156.46875,
+   "acrescimo_ram_mib": 388.046875
+  },
+  {
+   "repeticao": 3,
+   "relogio_s": 47.120866999961436,
+   "cpu_s": 334.0625,
+   "pico_ram_mib": 1083.5625,
+   "acrescimo_ram_mib": 191.84375
+  }
+ ],
+ "modelo_ajuste": {
+  "arquivo_mib": 23.048577308654785,
+  "n_arvores": 100,
+  "nos_total": 1045332,
+  "profundidade_media": 46.4,
+  "profundidade_max": 78
+ },
+ "modelo_final": {
+  "arquivo_mib": 27.74549102783203,
+  "n_arvores": 100,
+  "nos_total": 1267902,
+  "profundidade_media": 47.53,
+  "profundidade_max": 76
+ },
+ "inferencia_modelo_ajuste": [
+  {
+   "n_jobs": 1,
+   "n_latencia": 1000,
+   "latencia_modelo_p50_ms": 27.189949993044138,
+   "latencia_modelo_p95_ms": 33.101604669354856,
+   "latencia_modelo_p99_ms": 40.93020706903189,
+   "latencia_fim_a_fim_p50_ms": 27.593150036409497,
+   "latencia_fim_a_fim_p95_ms": 33.97145001217722,
+   "latencia_fim_a_fim_p99_ms": 41.96127291303127,
+   "vazao_modelo_fluxos_s": 19283.408856100115,
+   "vazao_fim_a_fim_fluxos_s": 19224.517647829252,
+   "n_lote": 59918
+  },
+  {
+   "n_jobs": -1,
+   "n_latencia": 1000,
+   "latencia_modelo_p50_ms": 67.35219992697239,
+   "latencia_modelo_p95_ms": 97.8802601341158,
+   "latencia_modelo_p99_ms": 120.00135467387734,
+   "latencia_fim_a_fim_p50_ms": 67.59604997932911,
+   "latencia_fim_a_fim_p95_ms": 98.16869006026535,
+   "latencia_fim_a_fim_p99_ms": 121.25369497109205,
+   "vazao_modelo_fluxos_s": 99386.18029687932,
+   "vazao_fim_a_fim_fluxos_s": 89567.24954751834,
+   "n_lote": 59918
+  }
+ ],
+ "inferencia_modelo_final": [
+  {
+   "n_jobs": 1,
+   "n_latencia": 1000,
+   "latencia_modelo_p50_ms": 18.616100074723363,
+   "latencia_modelo_p95_ms": 20.89690996799618,
+   "latencia_modelo_p99_ms": 25.93447603750974,
+   "latencia_fim_a_fim_p50_ms": 18.808700144290924,
+   "latencia_fim_a_fim_p95_ms": 21.244500158354636,
+   "latencia_fim_a_fim_p99_ms": 26.0933171864599,
+   "vazao_modelo_fluxos_s": 19069.03469171316,
+   "vazao_fim_a_fim_fluxos_s": 19260.242495508206,
+   "n_lote": 59918
+  },
+  {
+   "n_jobs": -1,
+   "n_latencia": 1000,
+   "latencia_modelo_p50_ms": 104.2898001614958,
+   "latencia_modelo_p95_ms": 155.81512004137034,
+   "latencia_modelo_p99_ms": 230.5829852493479,
+   "latencia_fim_a_fim_p50_ms": 104.62319967336953,
+   "latencia_fim_a_fim_p95_ms": 156.54011524748051,
+   "latencia_fim_a_fim_p99_ms": 230.8869582321494,
+   "vazao_modelo_fluxos_s": 67100.39246066513,
+   "vazao_fim_a_fim_fluxos_s": 66172.47694288942,
+   "n_lote": 59918
+  }
+ ]
+}

@@ -1,0 +1,897 @@
+{
+ "registros": {
+  "treino": 50063112,
+  "teste": 20364525
+ },
+ "invalidos": {
+  "por_status": {
+   "nao_numerico": 6145,
+   "pos_inf": 4092348,
+   "vazio": 249152
+  },
+  "linhas": [
+   {
+    "conjunto": "treino",
+    "total": 50063112,
+    "linhas_taxas_invalidas": 1363236,
+    "linhas_texto_simillarhttp": 4407,
+    "linhas_com_algum_ausente": 1367643
+   },
+   {
+    "conjunto": "teste",
+    "total": 20364525,
+    "linhas_taxas_invalidas": 807514,
+    "linhas_texto_simillarhttp": 1738,
+    "linhas_com_algum_ausente": 809252
+   }
+  ]
+ },
+ "ausentes": {
+  "colunas": [
+   "flow_bytes_s",
+   "flow_packets_s",
+   "simillarhttp"
+  ],
+  "removidas_por_excesso": [],
+  "taxas_treino": {
+   "flow_bytes_s": 0.0272303487645754,
+   "flow_packets_s": 0.0272303487645754,
+   "simillarhttp": 8.802888641840723e-05
+  }
+ },
+ "constantes": {
+  "eda_total": 13,
+  "eda_confirmadas": 13,
+  "removidas": [
+   "bwd_psh_flags",
+   "fwd_urg_flags",
+   "bwd_urg_flags",
+   "fin_flag_count",
+   "psh_flag_count",
+   "ece_flag_count",
+   "fwd_avg_bytes_bulk",
+   "fwd_avg_packets_bulk",
+   "fwd_avg_bulk_rate",
+   "bwd_avg_bytes_bulk",
+   "bwd_avg_packets_bulk",
+   "bwd_avg_bulk_rate",
+   "simillarhttp"
+  ],
+  "so_eda": [],
+  "so_novo": [],
+  "variam_no_teste": [],
+  "auditoria_eda": [
+   {
+    "coluna": "bwd_psh_flags",
+    "constante_treino": true,
+    "sem_valor_valido_treino": false,
+    "constante_teste": true,
+    "situacao": "EDA: confirmada constante no treino"
+   },
+   {
+    "coluna": "fwd_urg_flags",
+    "constante_treino": true,
+    "sem_valor_valido_treino": false,
+    "constante_teste": true,
+    "situacao": "EDA: confirmada constante no treino"
+   },
+   {
+    "coluna": "bwd_urg_flags",
+    "constante_treino": true,
+    "sem_valor_valido_treino": false,
+    "constante_teste": true,
+    "situacao": "EDA: confirmada constante no treino"
+   },
+   {
+    "coluna": "fin_flag_count",
+    "constante_treino": true,
+    "sem_valor_valido_treino": false,
+    "constante_teste": true,
+    "situacao": "EDA: confirmada constante no treino"
+   },
+   {
+    "coluna": "psh_flag_count",
+    "constante_treino": true,
+    "sem_valor_valido_treino": false,
+    "constante_teste": true,
+    "situacao": "EDA: confirmada constante no treino"
+   },
+   {
+    "coluna": "ece_flag_count",
+    "constante_treino": true,
+    "sem_valor_valido_treino": false,
+    "constante_teste": true,
+    "situacao": "EDA: confirmada constante no treino"
+   },
+   {
+    "coluna": "fwd_avg_bytes_bulk",
+    "constante_treino": true,
+    "sem_valor_valido_treino": false,
+    "constante_teste": true,
+    "situacao": "EDA: confirmada constante no treino"
+   },
+   {
+    "coluna": "fwd_avg_packets_bulk",
+    "constante_treino": true,
+    "sem_valor_valido_treino": false,
+    "constante_teste": true,
+    "situacao": "EDA: confirmada constante no treino"
+   },
+   {
+    "coluna": "fwd_avg_bulk_rate",
+    "constante_treino": true,
+    "sem_valor_valido_treino": false,
+    "constante_teste": true,
+    "situacao": "EDA: confirmada constante no treino"
+   },
+   {
+    "coluna": "bwd_avg_bytes_bulk",
+    "constante_treino": true,
+    "sem_valor_valido_treino": false,
+    "constante_teste": true,
+    "situacao": "EDA: confirmada constante no treino"
+   },
+   {
+    "coluna": "bwd_avg_packets_bulk",
+    "constante_treino": true,
+    "sem_valor_valido_treino": false,
+    "constante_teste": true,
+    "situacao": "EDA: confirmada constante no treino"
+   },
+   {
+    "coluna": "bwd_avg_bulk_rate",
+    "constante_treino": true,
+    "sem_valor_valido_treino": false,
+    "constante_teste": true,
+    "situacao": "EDA: confirmada constante no treino"
+   },
+   {
+    "coluna": "simillarhttp",
+    "constante_treino": true,
+    "sem_valor_valido_treino": false,
+    "constante_teste": true,
+    "situacao": "EDA: confirmada constante no treino"
+   }
+  ]
+ },
+ "duplicadas_colunas": {
+  "removidas_decisao_treino": {
+   "subflow_fwd_packets": "total_fwd_packets",
+   "subflow_fwd_bytes": "total_length_of_fwd_packets",
+   "subflow_bwd_packets": "total_backward_packets",
+   "subflow_bwd_bytes": "total_length_of_bwd_packets",
+   "rst_flag_count": "fwd_psh_flags",
+   "fwd_header_length_1": "fwd_header_length"
+  },
+  "alertas_diferenca_teste": [],
+  "pares_auditados": [
+   {
+    "mantida": "total_fwd_packets",
+    "candidata_a_remover": "subflow_fwd_packets",
+    "difere_treino": 0,
+    "difere_teste_auditoria": 0,
+    "difere_treino_tol1e-9": 0,
+    "difere_teste_tol1e-9_auditoria": 0,
+    "duplicada_no_treino": true,
+    "difere_no_teste_alerta": false
+   },
+   {
+    "mantida": "total_length_of_fwd_packets",
+    "candidata_a_remover": "subflow_fwd_bytes",
+    "difere_treino": 0,
+    "difere_teste_auditoria": 0,
+    "difere_treino_tol1e-9": 0,
+    "difere_teste_tol1e-9_auditoria": 0,
+    "duplicada_no_treino": true,
+    "difere_no_teste_alerta": false
+   },
+   {
+    "mantida": "total_backward_packets",
+    "candidata_a_remover": "subflow_bwd_packets",
+    "difere_treino": 0,
+    "difere_teste_auditoria": 0,
+    "difere_treino_tol1e-9": 0,
+    "difere_teste_tol1e-9_auditoria": 0,
+    "duplicada_no_treino": true,
+    "difere_no_teste_alerta": false
+   },
+   {
+    "mantida": "total_length_of_bwd_packets",
+    "candidata_a_remover": "subflow_bwd_bytes",
+    "difere_treino": 0,
+    "difere_teste_auditoria": 0,
+    "difere_treino_tol1e-9": 0,
+    "difere_teste_tol1e-9_auditoria": 0,
+    "duplicada_no_treino": true,
+    "difere_no_teste_alerta": false
+   },
+   {
+    "mantida": "fwd_psh_flags",
+    "candidata_a_remover": "rst_flag_count",
+    "difere_treino": 0,
+    "difere_teste_auditoria": 0,
+    "difere_treino_tol1e-9": 0,
+    "difere_teste_tol1e-9_auditoria": 0,
+    "duplicada_no_treino": true,
+    "difere_no_teste_alerta": false
+   },
+   {
+    "mantida": "bwd_packet_length_mean",
+    "candidata_a_remover": "avg_bwd_segment_size",
+    "difere_treino": 4889,
+    "difere_teste_auditoria": 5612,
+    "difere_treino_tol1e-9": 0,
+    "difere_teste_tol1e-9_auditoria": 0,
+    "duplicada_no_treino": false,
+    "difere_no_teste_alerta": false
+   },
+   {
+    "mantida": "fwd_packet_length_mean",
+    "candidata_a_remover": "avg_fwd_segment_size",
+    "difere_treino": 61437,
+    "difere_teste_auditoria": 10703,
+    "difere_treino_tol1e-9": 0,
+    "difere_teste_tol1e-9_auditoria": 0,
+    "duplicada_no_treino": false,
+    "difere_no_teste_alerta": false
+   },
+   {
+    "mantida": "fwd_header_length",
+    "candidata_a_remover": "fwd_header_length_1",
+    "difere_treino": 0,
+    "difere_teste_auditoria": 0,
+    "difere_treino_tol1e-9": 0,
+    "difere_teste_tol1e-9_auditoria": 0,
+    "duplicada_no_treino": true,
+    "difere_no_teste_alerta": false
+   }
+  ]
+ },
+ "features_base": [
+  "protocol",
+  "flow_duration",
+  "total_fwd_packets",
+  "total_backward_packets",
+  "total_length_of_fwd_packets",
+  "total_length_of_bwd_packets",
+  "fwd_packet_length_max",
+  "fwd_packet_length_min",
+  "fwd_packet_length_mean",
+  "fwd_packet_length_std",
+  "bwd_packet_length_max",
+  "bwd_packet_length_min",
+  "bwd_packet_length_mean",
+  "bwd_packet_length_std",
+  "flow_bytes_s",
+  "flow_packets_s",
+  "flow_iat_mean",
+  "flow_iat_std",
+  "flow_iat_max",
+  "flow_iat_min",
+  "fwd_iat_total",
+  "fwd_iat_mean",
+  "fwd_iat_std",
+  "fwd_iat_max",
+  "fwd_iat_min",
+  "bwd_iat_total",
+  "bwd_iat_mean",
+  "bwd_iat_std",
+  "bwd_iat_max",
+  "bwd_iat_min",
+  "fwd_psh_flags",
+  "fwd_header_length",
+  "bwd_header_length",
+  "fwd_packets_s",
+  "bwd_packets_s",
+  "min_packet_length",
+  "max_packet_length",
+  "packet_length_mean",
+  "packet_length_std",
+  "packet_length_variance",
+  "syn_flag_count",
+  "ack_flag_count",
+  "urg_flag_count",
+  "cwe_flag_count",
+  "down_up_ratio",
+  "average_packet_size",
+  "avg_fwd_segment_size",
+  "avg_bwd_segment_size",
+  "init_win_bytes_forward",
+  "init_win_bytes_backward",
+  "act_data_pkt_fwd",
+  "min_seg_size_forward",
+  "active_mean",
+  "active_std",
+  "active_max",
+  "active_min",
+  "idle_mean",
+  "idle_std",
+  "idle_max",
+  "idle_min",
+  "inbound"
+ ],
+ "sobreposicao_teste_com_treino": {
+  "linhas_teste": 20364525,
+  "com_features_no_treino": 13145336
+ },
+ "mapa_rotulos": {
+  "UDP-lag": "UDPLag"
+ },
+ "duplicatas_eda_vs_pipeline": {
+  "eda_repetidas_referencia": 59927555,
+  "eda_total_referencia": 70427637,
+  "eda_percentual_referencia": 85.09096365110192,
+  "treino_antes": 50063112,
+  "treino_depois": 8257343,
+  "treino_removidas_efetivas": 41805769,
+  "treino_percentual_removido": 83.5061332184064,
+  "teste_registros_preservados": 20364525,
+  "teste_deduplicado": false
+ },
+ "duplicatas_treino": {
+  "antes": 50063112,
+  "depois": 8257343,
+  "removidas": 41805769
+ },
+ "conflitos_treino": [
+  {
+   "n_rotulos": 2,
+   "n_binarios": 1,
+   "grupos": 170440,
+   "linhas": 4147225
+  },
+  {
+   "n_rotulos": 2,
+   "n_binarios": 2,
+   "grupos": 9,
+   "linhas": 279
+  },
+  {
+   "n_rotulos": 3,
+   "n_binarios": 2,
+   "grupos": 8,
+   "linhas": 159
+  },
+  {
+   "n_rotulos": 3,
+   "n_binarios": 1,
+   "grupos": 15938,
+   "linhas": 7188383
+  },
+  {
+   "n_rotulos": 4,
+   "n_binarios": 2,
+   "grupos": 3,
+   "linhas": 128
+  },
+  {
+   "n_rotulos": 4,
+   "n_binarios": 1,
+   "grupos": 2366,
+   "linhas": 5326733
+  },
+  {
+   "n_rotulos": 5,
+   "n_binarios": 1,
+   "grupos": 1159,
+   "linhas": 3778950
+  },
+  {
+   "n_rotulos": 6,
+   "n_binarios": 2,
+   "grupos": 1,
+   "linhas": 58
+  },
+  {
+   "n_rotulos": 6,
+   "n_binarios": 1,
+   "grupos": 166,
+   "linhas": 6716265
+  },
+  {
+   "n_rotulos": 7,
+   "n_binarios": 1,
+   "grupos": 41,
+   "linhas": 1736075
+  },
+  {
+   "n_rotulos": 8,
+   "n_binarios": 1,
+   "grupos": 22,
+   "linhas": 2769885
+  },
+  {
+   "n_rotulos": 9,
+   "n_binarios": 1,
+   "grupos": 11,
+   "linhas": 1771595
+  },
+  {
+   "n_rotulos": 10,
+   "n_binarios": 1,
+   "grupos": 8,
+   "linhas": 1205618
+  }
+ ],
+ "conflitos_investigacao": [
+  {
+   "rotulo": "DrDoS_DNS",
+   "tabela": "data_drdos_dns",
+   "linhas": 362,
+   "ips_origem": 2,
+   "portas_destino": 356,
+   "top_portas_destino": [
+    "24526",
+    "51483",
+    "13369"
+   ],
+   "primeiro": "2018-12-01 10:58:33.193434",
+   "ultimo": "2018-12-01 11:18:13.136368"
+  },
+  {
+   "rotulo": "BENIGN",
+   "tabela": "data_tftp",
+   "linhas": 67,
+   "ips_origem": 6,
+   "portas_destino": 6,
+   "top_portas_destino": [
+    "443",
+    "53",
+    "61473"
+   ],
+   "primeiro": "2018-12-01 13:38:18.174286",
+   "ultimo": "2018-12-01 16:45:05.036801"
+  },
+  {
+   "rotulo": "DrDoS_UDP",
+   "tabela": "data_drdos_udp",
+   "linhas": 48,
+   "ips_origem": 2,
+   "portas_destino": 3,
+   "top_portas_destino": [
+    "137",
+    "49153",
+    "22"
+   ],
+   "primeiro": "2018-12-01 12:40:39.635769",
+   "ultimo": "2018-12-01 13:03:40.110381"
+  },
+  {
+   "rotulo": "BENIGN",
+   "tabela": "data_drdos_mssql",
+   "linhas": 31,
+   "ips_origem": 3,
+   "portas_destino": 1,
+   "top_portas_destino": [
+    "443"
+   ],
+   "primeiro": "2018-12-01 11:32:51.117483",
+   "ultimo": "2018-12-01 11:45:46.191731"
+  },
+  {
+   "rotulo": "BENIGN",
+   "tabela": "data_drdos_ntp",
+   "linhas": 29,
+   "ips_origem": 11,
+   "portas_destino": 13,
+   "top_portas_destino": [
+    "443",
+    "50453",
+    "59017"
+   ],
+   "primeiro": "2018-12-01 09:17:12.634569",
+   "ultimo": "2018-12-01 10:49:06.236251"
+  },
+  {
+   "rotulo": "DrDoS_SNMP",
+   "tabela": "data_drdos_snmp",
+   "linhas": 23,
+   "ips_origem": 2,
+   "portas_destino": 12,
+   "top_portas_destino": [
+    "162",
+    "137",
+    "57176"
+   ],
+   "primeiro": "2018-12-01 12:06:40.703016",
+   "ultimo": "2018-12-01 12:23:11.113546"
+  },
+  {
+   "rotulo": "DrDoS_LDAP",
+   "tabela": "data_drdos_ldap",
+   "linhas": 12,
+   "ips_origem": 1,
+   "portas_destino": 12,
+   "top_portas_destino": [
+    "8884",
+    "11479",
+    "31333"
+   ],
+   "primeiro": "2018-12-01 11:23:23.821642",
+   "ultimo": "2018-12-01 11:32:32.186851"
+  },
+  {
+   "rotulo": "TFTP",
+   "tabela": "data_tftp",
+   "linhas": 10,
+   "ips_origem": 2,
+   "portas_destino": 8,
+   "top_portas_destino": [
+    "51220",
+    "137",
+    "41992"
+   ],
+   "primeiro": "2018-12-01 13:34:37.807535",
+   "ultimo": "2018-12-01 17:06:13.429294"
+  },
+  {
+   "rotulo": "BENIGN",
+   "tabela": "data_drdos_ldap",
+   "linhas": 7,
+   "ips_origem": 5,
+   "portas_destino": 6,
+   "top_portas_destino": [
+    "443",
+    "57198",
+    "58628"
+   ],
+   "primeiro": "2018-12-01 11:30:25.398181",
+   "ultimo": "2018-12-01 11:32:19.391037"
+  },
+  {
+   "rotulo": "BENIGN",
+   "tabela": "data_drdos_dns",
+   "linhas": 7,
+   "ips_origem": 4,
+   "portas_destino": 4,
+   "top_portas_destino": [
+    "443",
+    "52057",
+    "55380"
+   ],
+   "primeiro": "2018-12-01 11:10:41.416479",
+   "ultimo": "2018-12-01 11:20:09.317389"
+  },
+  {
+   "rotulo": "DrDoS_SSDP",
+   "tabela": "data_drdos_ssdp",
+   "linhas": 6,
+   "ips_origem": 1,
+   "portas_destino": 2,
+   "top_portas_destino": [
+    "137",
+    "33815"
+   ],
+   "primeiro": "2018-12-01 12:23:14.118830",
+   "ultimo": "2018-12-01 12:25:38.361825"
+  },
+  {
+   "rotulo": "BENIGN",
+   "tabela": "data_drdos_udp",
+   "linhas": 5,
+   "ips_origem": 4,
+   "portas_destino": 3,
+   "top_portas_destino": [
+    "443",
+    "57795",
+    "57794"
+   ],
+   "primeiro": "2018-12-01 12:54:43.874178",
+   "ultimo": "2018-12-01 13:04:01.581517"
+  },
+  {
+   "rotulo": "DrDoS_NTP",
+   "tabela": "data_drdos_ntp",
+   "linhas": 5,
+   "ips_origem": 1,
+   "portas_destino": 3,
+   "top_portas_destino": [
+    "51220",
+    "22",
+    "57440"
+   ],
+   "primeiro": "2018-12-01 09:26:03.669082",
+   "ultimo": "2018-12-01 10:36:12.276943"
+  },
+  {
+   "rotulo": "BENIGN",
+   "tabela": "data_drdos_snmp",
+   "linhas": 4,
+   "ips_origem": 3,
+   "portas_destino": 2,
+   "top_portas_destino": [
+    "443",
+    "60804"
+   ],
+   "primeiro": "2018-12-01 12:14:06.201222",
+   "ultimo": "2018-12-01 12:23:12.669222"
+  },
+  {
+   "rotulo": "BENIGN",
+   "tabela": "data_udplag",
+   "linhas": 3,
+   "ips_origem": 3,
+   "portas_destino": 3,
+   "top_portas_destino": [
+    "35246",
+    "58009",
+    "443"
+   ],
+   "primeiro": "2018-12-01 13:09:58.216504",
+   "ultimo": "2018-12-01 13:24:12.265567"
+  },
+  {
+   "rotulo": "BENIGN",
+   "tabela": "data_syn",
+   "linhas": 2,
+   "ips_origem": 2,
+   "portas_destino": 2,
+   "top_portas_destino": [
+    "443",
+    "59983"
+   ],
+   "primeiro": "2018-12-01 13:31:09.913568",
+   "ultimo": "2018-12-01 13:32:21.623616"
+  },
+  {
+   "rotulo": "BENIGN",
+   "tabela": "data_drdos_ssdp",
+   "linhas": 2,
+   "ips_origem": 2,
+   "portas_destino": 2,
+   "top_portas_destino": [
+    "443",
+    "57621"
+   ],
+   "primeiro": "2018-12-01 12:32:37.815856",
+   "ultimo": "2018-12-01 12:35:41.568848"
+  },
+  {
+   "rotulo": "UDP-lag",
+   "tabela": "data_udplag",
+   "linhas": 1,
+   "ips_origem": 1,
+   "portas_destino": 1,
+   "top_portas_destino": [
+    "63851"
+   ],
+   "primeiro": "2018-12-01 13:29:55.698492",
+   "ultimo": "2018-12-01 13:29:55.698492"
+  }
+ ],
+ "classes": [
+  {
+   "label_multi": "TFTP",
+   "treino": 20082580,
+   "n_treino_dedup": 4396919,
+   "teste": 0,
+   "so_em": "só treino",
+   "alerta": "sem avaliação/treino correspondente"
+  },
+  {
+   "label_multi": "DrDoS_SNMP",
+   "treino": 5159870,
+   "n_treino_dedup": 115316,
+   "teste": 0,
+   "so_em": "só treino",
+   "alerta": "sem avaliação/treino correspondente"
+  },
+  {
+   "label_multi": "DrDoS_DNS",
+   "treino": 5071011,
+   "n_treino_dedup": 113259,
+   "teste": 0,
+   "so_em": "só treino",
+   "alerta": "sem avaliação/treino correspondente"
+  },
+  {
+   "label_multi": "DrDoS_MSSQL",
+   "treino": 4522492,
+   "n_treino_dedup": 207003,
+   "teste": 0,
+   "so_em": "só treino",
+   "alerta": "sem avaliação/treino correspondente"
+  },
+  {
+   "label_multi": "DrDoS_NetBIOS",
+   "treino": 4093279,
+   "n_treino_dedup": 19490,
+   "teste": 0,
+   "so_em": "só treino",
+   "alerta": "sem avaliação/treino correspondente"
+  },
+  {
+   "label_multi": "DrDoS_UDP",
+   "treino": 3134645,
+   "n_treino_dedup": 1075337,
+   "teste": 0,
+   "so_em": "só treino",
+   "alerta": "sem avaliação/treino correspondente"
+  },
+  {
+   "label_multi": "DrDoS_SSDP",
+   "treino": 2610611,
+   "n_treino_dedup": 891221,
+   "teste": 0,
+   "so_em": "só treino",
+   "alerta": "sem avaliação/treino correspondente"
+  },
+  {
+   "label_multi": "DrDoS_LDAP",
+   "treino": 2179930,
+   "n_treino_dedup": 30099,
+   "teste": 0,
+   "so_em": "só treino",
+   "alerta": "sem avaliação/treino correspondente"
+  },
+  {
+   "label_multi": "Syn",
+   "treino": 1582289,
+   "n_treino_dedup": 155515,
+   "teste": 4891500,
+   "so_em": "ambos",
+   "alerta": ""
+  },
+  {
+   "label_multi": "DrDoS_NTP",
+   "treino": 1202642,
+   "n_treino_dedup": 1112936,
+   "teste": 0,
+   "so_em": "só treino",
+   "alerta": "sem avaliação/treino correspondente"
+  },
+  {
+   "label_multi": "UDPLag",
+   "treino": 366461,
+   "n_treino_dedup": 89066,
+   "teste": 1873,
+   "so_em": "ambos",
+   "alerta": ""
+  },
+  {
+   "label_multi": "BENIGN",
+   "treino": 56863,
+   "n_treino_dedup": 50768,
+   "teste": 56965,
+   "so_em": "ambos",
+   "alerta": ""
+  },
+  {
+   "label_multi": "WebDDoS",
+   "treino": 439,
+   "n_treino_dedup": 414,
+   "teste": 0,
+   "so_em": "só treino",
+   "alerta": "sem avaliação/treino correspondente"
+  },
+  {
+   "label_multi": "LDAP",
+   "treino": 0,
+   "n_treino_dedup": 0,
+   "teste": 1915122,
+   "so_em": "só teste",
+   "alerta": "sem avaliação/treino correspondente"
+  },
+  {
+   "label_multi": "Portmap",
+   "treino": 0,
+   "n_treino_dedup": 0,
+   "teste": 186960,
+   "so_em": "só teste",
+   "alerta": "sem avaliação/treino correspondente"
+  },
+  {
+   "label_multi": "NetBIOS",
+   "treino": 0,
+   "n_treino_dedup": 0,
+   "teste": 3657497,
+   "so_em": "só teste",
+   "alerta": "sem avaliação/treino correspondente"
+  },
+  {
+   "label_multi": "MSSQL",
+   "treino": 0,
+   "n_treino_dedup": 0,
+   "teste": 5787453,
+   "so_em": "só teste",
+   "alerta": "sem avaliação/treino correspondente"
+  },
+  {
+   "label_multi": "UDP",
+   "treino": 0,
+   "n_treino_dedup": 0,
+   "teste": 3867155,
+   "so_em": "só teste",
+   "alerta": "sem avaliação/treino correspondente"
+  }
+ ],
+ "final": {
+  "treino": 8257343,
+  "teste": 20364525,
+  "features": 61,
+  "indicadores": [
+   "flow_bytes_s",
+   "flow_packets_s"
+  ]
+ },
+ "reduzido": {
+  "mantidas": [
+   "protocol",
+   "total_fwd_packets",
+   "total_length_of_fwd_packets",
+   "total_length_of_bwd_packets",
+   "fwd_packet_length_std",
+   "bwd_packet_length_max",
+   "bwd_packet_length_min",
+   "bwd_packet_length_std",
+   "flow_bytes_s",
+   "flow_iat_std",
+   "fwd_iat_total",
+   "fwd_iat_min",
+   "bwd_iat_total",
+   "bwd_iat_mean",
+   "bwd_iat_max",
+   "bwd_iat_min",
+   "fwd_psh_flags",
+   "fwd_header_length",
+   "bwd_header_length",
+   "fwd_packets_s",
+   "bwd_packets_s",
+   "max_packet_length",
+   "packet_length_std",
+   "packet_length_variance",
+   "syn_flag_count",
+   "ack_flag_count",
+   "urg_flag_count",
+   "cwe_flag_count",
+   "down_up_ratio",
+   "average_packet_size",
+   "avg_bwd_segment_size",
+   "init_win_bytes_forward",
+   "init_win_bytes_backward",
+   "min_seg_size_forward",
+   "active_std",
+   "active_max",
+   "active_min",
+   "idle_std",
+   "idle_min",
+   "inbound"
+  ],
+  "candidatas_removidas": {
+   "flow_duration": "|r|=1.000 com fwd_iat_total no treino (maior correlação média)",
+   "total_backward_packets": "|r|=0.984 com total_length_of_bwd_packets no treino (maior correlação média)",
+   "act_data_pkt_fwd": "|r|=0.999 com total_length_of_fwd_packets no treino (maior correlação média)",
+   "fwd_packet_length_mean": "|r|=0.982 com fwd_packet_length_max no treino (maior correlação média)",
+   "packet_length_mean": "|r|=0.982 com fwd_packet_length_max no treino (maior correlação média)",
+   "fwd_packet_length_max": "|r|=0.965 com average_packet_size no treino (maior correlação média)",
+   "min_packet_length": "|r|=1.000 com fwd_packet_length_min no treino (maior correlação média)",
+   "fwd_packet_length_min": "|r|=0.952 com average_packet_size no treino (maior correlação média)",
+   "bwd_packet_length_mean": "|r|=1.000 com avg_bwd_segment_size no treino (maior correlação média)",
+   "flow_packets_s": "|r|=1.000 com fwd_packets_s no treino (maior correlação média)",
+   "flow_iat_mean": "|r|=0.975 com flow_iat_std no treino (maior correlação média)",
+   "flow_iat_max": "|r|=0.956 com flow_iat_std no treino (maior correlação média)",
+   "fwd_iat_mean": "|r|=0.974 com flow_iat_std no treino (maior correlação média)",
+   "fwd_iat_std": "|r|=0.995 com flow_iat_std no treino (maior correlação média)",
+   "fwd_iat_max": "|r|=0.953 com flow_iat_std no treino (maior correlação média)",
+   "flow_iat_min": "|r|=1.000 com fwd_iat_min no treino (maior correlação média)",
+   "bwd_iat_std": "|r|=0.994 com bwd_iat_mean no treino (maior correlação média)",
+   "avg_fwd_segment_size": "|r|=0.976 com average_packet_size no treino (maior correlação média)",
+   "active_mean": "|r|=0.952 com active_min no treino (maior correlação média)",
+   "idle_max": "|r|=0.969 com idle_mean no treino (maior correlação média)",
+   "idle_mean": "|r|=0.967 com idle_min no treino (maior correlação média)"
+  }
+ },
+ "parametros": {
+  "versao": "20261017_005250",
+  "medianas": {
+   "flow_bytes_s": 689.5911165696316,
+   "flow_packets_s": 1.3374280923427226
+  }
+ },
+ "validacao": {
+  "checagens_ok": 15,
+  "checagens_total": 15,
+  "teste_sobrepoe_treino": 13145336,
+  "treino_conflito_rotulo": 405651
+ }
+}

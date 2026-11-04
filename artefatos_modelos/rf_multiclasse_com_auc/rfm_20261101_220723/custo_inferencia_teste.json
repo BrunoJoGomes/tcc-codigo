@@ -1,0 +1,8 @@
+{
+ "vazao_dados_reais_fluxos_s": 140496.27332783918,
+ "tempo_previsao_total_s": 51.36425920110196,
+ "tempo_teste_relogio_s": 269.8,
+ "sessoes_teste": 1,
+ "n_jobs_modelo": -1,
+ "n_estimators": 100
+}

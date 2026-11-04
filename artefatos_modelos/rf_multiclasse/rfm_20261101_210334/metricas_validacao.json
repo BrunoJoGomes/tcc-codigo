@@ -1,0 +1,245 @@
+{
+ "sem_pesos": {
+  "acuracia": 0.9126472846223171,
+  "acuracia_balanceada": 0.9025533288461852,
+  "precisao_macro": 0.8991551732934273,
+  "f1_macro": 0.9006928045406566,
+  "f1_ponderado": 0.9127099514874824,
+  "mcc": 0.8968905267064411,
+  "roc_auc_ovr_macro": 0.9901980308073736
+ },
+ "proporcao_treino": {
+  "acuracia": 0.9139011901974194,
+  "acuracia_balanceada": 0.9025533288461871,
+  "precisao_macro": 0.8040343756510758,
+  "f1_macro": 0.8351871746020846,
+  "f1_ponderado": 0.9248982050852155,
+  "mcc": 0.8520136622378084,
+  "roc_auc_ovr_macro": 0.9887848940423324
+ },
+ "por_classe": {
+  "BENIGN": {
+   "suporte (validação)": 10000,
+   "recall": 0.999,
+   "precisão (sem pesos)": 0.9987003898830351,
+   "F1 (sem pesos)": 0.9988501724741289,
+   "precisão (prop. treino)": 0.9973525857391081,
+   "F1 (prop. treino)": 0.9981756131364833,
+   "ROC-AUC um-contra-resto": 0.9999989172242478,
+   "peso de classe no ajuste": 0.8559678571428572
+  },
+  "LDAP": {
+   "suporte (validação)": 6020,
+   "recall": 0.9646179401993356,
+   "precisão (sem pesos)": 0.959517514871117,
+   "F1 (sem pesos)": 0.9620609675281644,
+   "precisão (prop. treino)": 0.8739977672276896,
+   "F1 (prop. treino)": 0.9170746475801583,
+   "ROC-AUC um-contra-resto": 0.9982562916615353,
+   "peso de classe no ajuste": 1.4219325672043808
+  },
+  "MSSQL": {
+   "suporte (validação)": 10000,
+   "recall": 0.8804,
+   "precisão (sem pesos)": 0.898642441563744,
+   "F1 (sem pesos)": 0.8894276910643026,
+   "precisão (prop. treino)": 0.9627922454593694,
+   "F1 (prop. treino)": 0.9197546213538543,
+   "ROC-AUC um-contra-resto": 0.986278214271405,
+   "peso de classe no ajuste": 0.8559678571428572
+  },
+  "NetBIOS": {
+   "suporte (validação)": 3898,
+   "recall": 0.7629553617239611,
+   "precisão (sem pesos)": 0.7234249574312819,
+   "F1 (sem pesos)": 0.7426645024347609,
+   "precisão (prop. treino)": 0.380429792892457,
+   "F1 (prop. treino)": 0.507704598183644,
+   "ROC-AUC um-contra-resto": 0.979156043826611,
+   "peso de classe no ajuste": 2.1959154877959395
+  },
+  "Syn": {
+   "suporte (validação)": 10000,
+   "recall": 0.955,
+   "precisão (sem pesos)": 0.9501542135110934,
+   "F1 (sem pesos)": 0.9525709440925639,
+   "precisão (prop. treino)": 0.9703533633337148,
+   "F1 (prop. treino)": 0.9626154654324407,
+   "ROC-AUC um-contra-resto": 0.9965242547778358,
+   "peso de classe no ajuste": 0.8559678571428572
+  },
+  "UDP": {
+   "suporte (validação)": 10000,
+   "recall": 0.918,
+   "precisão (sem pesos)": 0.8926487747957993,
+   "F1 (sem pesos)": 0.9051469138237034,
+   "precisão (prop. treino)": 0.9899731303955084,
+   "F1 (prop. treino)": 0.9526290692727921,
+   "ROC-AUC um-contra-resto": 0.9914146750671102,
+   "peso de classe no ajuste": 0.8559678571428572
+  },
+  "UDPLag": {
+   "suporte (validação)": 10000,
+   "recall": 0.8379,
+   "precisão (sem pesos)": 0.870997920997921,
+   "F1 (sem pesos)": 0.8541284403669724,
+   "precisão (prop. treino)": 0.4533417445096832,
+   "F1 (prop. treino)": 0.58835620725522,
+   "ROC-AUC um-contra-resto": 0.9797578188228694,
+   "peso de classe no ajuste": 0.8559678571428572
+  }
+ },
+ "matriz_confusao": {
+  "real BENIGN": {
+   "prev. BENIGN": 9990,
+   "prev. LDAP": 3,
+   "prev. MSSQL": 0,
+   "prev. NetBIOS": 3,
+   "prev. Syn": 2,
+   "prev. UDP": 1,
+   "prev. UDPLag": 1
+  },
+  "real LDAP": {
+   "prev. BENIGN": 1,
+   "prev. LDAP": 5807,
+   "prev. MSSQL": 135,
+   "prev. NetBIOS": 71,
+   "prev. Syn": 2,
+   "prev. UDP": 0,
+   "prev. UDPLag": 4
+  },
+  "real MSSQL": {
+   "prev. BENIGN": 1,
+   "prev. LDAP": 171,
+   "prev. MSSQL": 8804,
+   "prev. NetBIOS": 999,
+   "prev. Syn": 0,
+   "prev. UDP": 18,
+   "prev. UDPLag": 7
+  },
+  "real NetBIOS": {
+   "prev. BENIGN": 4,
+   "prev. LDAP": 56,
+   "prev. MSSQL": 831,
+   "prev. NetBIOS": 2974,
+   "prev. Syn": 2,
+   "prev. UDP": 11,
+   "prev. UDPLag": 20
+  },
+  "real Syn": {
+   "prev. BENIGN": 4,
+   "prev. LDAP": 3,
+   "prev. MSSQL": 0,
+   "prev. NetBIOS": 5,
+   "prev. Syn": 9550,
+   "prev. UDP": 0,
+   "prev. UDPLag": 438
+  },
+  "real UDP": {
+   "prev. BENIGN": 0,
+   "prev. LDAP": 2,
+   "prev. MSSQL": 20,
+   "prev. NetBIOS": 26,
+   "prev. Syn": 1,
+   "prev. UDP": 9180,
+   "prev. UDPLag": 771
+  },
+  "real UDPLag": {
+   "prev. BENIGN": 3,
+   "prev. LDAP": 10,
+   "prev. MSSQL": 7,
+   "prev. NetBIOS": 33,
+   "prev. Syn": 494,
+   "prev. UDP": 1074,
+   "prev. UDPLag": 8379
+  }
+ },
+ "dispersao_particoes": {
+  "k": 5,
+  "resumo": {
+   "roc_auc_ovr_macro": {
+    "mean": 0.9901979995325944,
+    "std": 0.0009121143614141459,
+    "min": 0.9889216263989572,
+    "max": 0.9911849552176041
+   },
+   "acuracia_balanceada": {
+    "mean": 0.9025530615525493,
+    "std": 0.0031158280117738637,
+    "min": 0.8979305082453318,
+    "max": 0.9058178720504302
+   },
+   "acuracia": {
+    "mean": 0.9126472421377547,
+    "std": 0.0018273570263106398,
+    "min": 0.9101226737878662,
+    "max": 0.9151368491321762
+   },
+   "f1_macro": {
+    "mean": 0.9006843316145563,
+    "std": 0.0026443499130609153,
+    "min": 0.8970472758892617,
+    "max": 0.903954007602679
+   },
+   "mcc": {
+    "mean": 0.8968972216762474,
+    "std": 0.0021539987869688493,
+    "min": 0.8939004803064237,
+    "max": 0.8998149050953674
+   },
+   "f1_macro_prop": {
+    "mean": 0.8352627888756403,
+    "std": 0.001662231602446253,
+    "min": 0.833801075315874,
+    "max": 0.8380951974475822
+   },
+   "mcc_prop": {
+    "mean": 0.8520338011155333,
+    "std": 0.003578245188014837,
+    "min": 0.8461164301401001,
+    "max": 0.8555614150171503
+   }
+  }
+ },
+ "cv_ajuste": {
+  "k": 5,
+  "resumo": {
+   "tempo_treino_s": {
+    "mean": 42.15354873994365,
+    "std": 4.925573919750921,
+    "min": 34.0801936998032,
+    "max": 45.79475980019197
+   },
+   "roc_auc_ovr_macro": {
+    "mean": 0.9903707994921813,
+    "std": 0.0003889161476329849,
+    "min": 0.989950737260334,
+    "max": 0.9907972389269587
+   },
+   "acuracia_balanceada": {
+    "mean": 0.9033583449689594,
+    "std": 0.001354993302814282,
+    "min": 0.901605419780255,
+    "max": 0.904820790863894
+   },
+   "acuracia": {
+    "mean": 0.9135022545363946,
+    "std": 0.0011866724343246827,
+    "min": 0.9119414194517461,
+    "max": 0.9147369299453415
+   },
+   "f1_macro": {
+    "mean": 0.901478082432938,
+    "std": 0.00137740810069219,
+    "min": 0.8995986362274918,
+    "max": 0.9031257514617341
+   },
+   "mcc": {
+    "mean": 0.8979273100184566,
+    "std": 0.0013964673198136497,
+    "min": 0.8960878271552009,
+    "max": 0.8993735811522299
+   }
+  }
+ }
+}

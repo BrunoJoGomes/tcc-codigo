@@ -1,0 +1,43 @@
+{
+ "escolhida": {
+  "C": 100.0,
+  "gamma_fator": 4.0,
+  "gamma": 0.09520944239648896,
+  "config": "C=100|gamma=4x",
+  "e_o_padrao": false
+ },
+ "usou_plano_b": false,
+ "passo1": {
+  "roc_auc": {
+   "melhor": "C=100|gamma=4x",
+   "valor_melhor": 0.9991682150755083,
+   "erro_padrao_melhor": 0.00013724984104117687,
+   "limite": 0.9990309652344672,
+   "n_empatadas": 3
+  },
+  "mcc_real": {
+   "melhor": "C=100|gamma=1x",
+   "valor_melhor": 0.7072042603100093,
+   "erro_padrao_melhor": 0.006933130139727626,
+   "limite": 0.7002711301702816,
+   "n_empatadas": 2
+  }
+ },
+ "n_elegiveis": 1,
+ "elegiveis": [
+  {
+   "config": "C=100|gamma=4x",
+   "cv_roc_auc": 0.9991682150755083,
+   "cv_mcc_real": 0.7009300896527446,
+   "n_sv": 2310
+  }
+ ],
+ "hiperparametros_finais": {
+  "kernel": "rbf",
+  "C": 100.0,
+  "gamma": 0.09520944239648896,
+  "gamma_fator": 4.0,
+  "cache_size": 200,
+  "normalizador": "StandardScaler nas colunas numéricas (média e desvio do próprio treino)"
+ }
+}

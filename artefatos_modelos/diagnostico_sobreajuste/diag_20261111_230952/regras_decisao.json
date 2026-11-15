@@ -1,0 +1,41 @@
+{
+ "gravado_em": "2026-11-11T23:09:52",
+ "observacao": "regras fixadas ANTES de calcular qualquer resultado deste diagnóstico (são as da introdução do notebook)",
+ "regras": {
+  "lacuna_acc_bal": [
+   0.01,
+   0.03
+  ],
+  "lacuna_roc_auc": [
+   0.005,
+   0.02
+  ],
+  "embaralhamento_media": 0.03,
+  "embaralhamento_max": 0.1,
+  "sobreposicao_validacao": [
+   0.01,
+   0.1
+  ],
+  "curva_ganho_50_100": [
+   0.0005,
+   0.003
+  ],
+  "queda_roc_auc_teste": [
+   0.005,
+   0.02
+  ],
+  "razao_falso_alarme": [
+   2.0,
+   10.0
+  ],
+  "queda_recall": [
+   0.01,
+   0.05
+  ],
+  "auc_adversarial": [
+   0.6,
+   0.8
+  ],
+  "min_linhas_unicas_adversarial": 200
+ }
+}

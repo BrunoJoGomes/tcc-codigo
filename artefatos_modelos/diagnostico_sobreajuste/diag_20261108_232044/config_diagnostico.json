@@ -1,0 +1,82 @@
+{
+ "run_id": "20261108_232044",
+ "data": "2026-11-08T23:59:35",
+ "origem": "notebook 13 (diagnóstico de sobreajuste)",
+ "semente": 42,
+ "parametros": {
+  "tamanhos_curva": [
+   0.1,
+   0.25,
+   0.5,
+   0.75,
+   1.0
+  ],
+  "reps_curva": 3,
+  "curva_padrao": false,
+  "n_perm_rf": 5,
+  "n_perm_svm": 3,
+  "n_svm_perm": 10000,
+  "n_val_perm_svm": 20000,
+  "n_adv": 20000,
+  "arvores_adv": 100,
+  "k_adv": 5,
+  "limite_pedido": 300000,
+  "fazer": {
+   "curva": true,
+   "embaralhamento": true,
+   "adversarial": true
+  }
+ },
+ "pastas": {
+  "rf_ajustado": "C:\\Users\\Bruno\\downloads\\tcc_codigo\\railway-ch\\artefatos_modelos\\rf_binario_busca\\rf_busca_20261024_175105",
+  "rf_padrao": "C:\\Users\\Bruno\\downloads\\tcc_codigo\\railway-ch\\artefatos_modelos\\rf_binario\\rf_bin_20261021_221311",
+  "svm": "C:\\Users\\Bruno\\downloads\\tcc_codigo\\railway-ch\\artefatos_modelos\\svm_binario_busca\\svm_busca_20261025_004828"
+ },
+ "versao_selecao_notebook04": "20261018_204854",
+ "versao_views_notebook03": "20261018_180729",
+ "dados": {
+  "ajuste": 81228,
+  "validacao": 60154,
+  "atributos": 43
+ },
+ "modelos": {
+  "rf_ajustado": {
+   "rotulo": "RF ajustado",
+   "limiar_natural": 0.5,
+   "descricao": "300 árvores | profundidade 15 | folha 1"
+  },
+  "rf_padrao": {
+   "rotulo": "RF padrão",
+   "limiar_natural": 0.5,
+   "descricao": "100 árvores | profundidade livre | folha 1"
+  },
+  "svm_ajustado": {
+   "rotulo": "SVM ajustado",
+   "limiar_natural": 0.0,
+   "descricao": "C = 100.0 | gamma = 0.09521 (4.0× o de referência)"
+  },
+  "svm_padrao": {
+   "rotulo": "SVM padrão",
+   "limiar_natural": 0.0,
+   "descricao": "C = 1 | gamma = 1× o de referência"
+  }
+ },
+ "classes_comuns_treino_teste": [
+  "BENIGN",
+  "LDAP",
+  "MSSQL",
+  "NetBIOS",
+  "Syn",
+  "UDP",
+  "UDPLag"
+ ],
+ "classes_so_no_teste": [
+  "Portmap"
+ ],
+ "software": {
+  "python": "3.13.14",
+  "numpy": "2.5.3",
+  "pandas": "2.3.3",
+  "sklearn": "1.9.1"
+ }
+}

@@ -1,0 +1,173 @@
+{
+ "versao": "corrigida manualmente (a partir da saída do 13m de 2026-11-12); os números das tabelas não mudaram",
+ "corrigido_em": "2026-11-12",
+ "o_que_foi_corrigido": [
+  "SVM ajustado: Q1 de 'grande' para 'pequena'. O alerta do embaralhamento era falso: com apenas 2 repetições (0,416 e 0,523) a média de 0,4695 ficou a 0,0305 de 0,5 (tolerância 0,03), e o ROC-AUC macro de um SVM de kernel treinado em rótulos embaralhados oscila muito mais que o do RF. Para o SVM o controle é inconclusivo e não entra como alerta.",
+  "Sobreposição ajuste × validação: 1.129 das 1.207 linhas idênticas têm rótulo DIFERENTE (conflitos entre classes). Elas penalizam a validação e não a inflam; as repetições com o mesmo rótulo são só 78 (0,13%). A frase 'torna a validação otimista' estava incorreta."
+ ],
+ "veredito": {
+  "RF ajustado": {
+   "Q1_decorar_o_treino": "moderada",
+   "Q2_generalizar_outro_dia": "grande",
+   "Q2_so_modelo": "grande",
+   "leitura": "HÁ lacuna treino−validação moderada (acurácia balanceada +0.0199, ROC-AUC +0.00288), esperada para árvores sem limite de profundidade, que acertam o treino por construção; a validação cruzada concorda com a validação do mesmo dia (CV−validação +0.0005) e o controle com rótulos embaralhados ficou em 0,497 (0,490 a 0,503). A queda no teste (validação→teste: ROC-AUC -0.0701, F1 macro -0.5026, acurácia balanceada -0.2453, maior queda de recall -0.817 (Syn)) é COMPATÍVEL com mudança de distribuição entre os dias (classe mais distinta: Syn, ROC-AUC adversarial 1.000; atributos: max_packet_length, total_length_of_fwd_packets, fwd_packet_length_max, flow_bytes_s, avg_fwd_segment_size)",
+   "curva_ganho_50_100": {
+    "ganho_roc_auc": 0.0003725444419551138,
+    "situacao": "pequena"
+   }
+  },
+  "RF padrão": {
+   "Q1_decorar_o_treino": "grande",
+   "Q2_generalizar_outro_dia": "grande",
+   "Q2_so_modelo": "grande",
+   "leitura": "HÁ lacuna treino−validação grande (acurácia balanceada +0.0885, ROC-AUC +0.00971), esperada para árvores sem limite de profundidade, que acertam o treino por construção; a validação cruzada concorda com a validação do mesmo dia (CV−validação +0.0015), ou seja, não há perda de generalização dentro do dia. A queda no teste (validação→teste: ROC-AUC -0.0769, F1 macro -0.3381, acurácia balanceada -0.2118, maior queda de recall -0.710 (Syn)) é COMPATÍVEL com mudança de distribuição entre os dias (classe mais distinta: Syn, ROC-AUC adversarial 1.000)",
+   "curva_ganho_50_100": {
+    "ganho_roc_auc": -0.00025432899287669564,
+    "situacao": "pequena"
+   }
+  },
+  "SVM ajustado": {
+   "Q1_decorar_o_treino": "pequena",
+   "Q2_generalizar_outro_dia": "grande",
+   "Q2_so_modelo": "grande",
+   "leitura": "sem sinal de decorar o treino (lacuna treino−validação: acurácia balanceada -0.0014, ROC-AUC -0.00003; CV−validação (acurácia balanceada) -0.0020); o controle com rótulos embaralhados foi INCONCLUSIVO para o SVM (2 repetições: 0,416 e 0,523; média 0,4695), pois o ROC-AUC macro de um SVM de kernel treinado sem estrutura oscila muito, e não foi tratado como alerta. A queda no teste (validação→teste: ROC-AUC -0.0738, F1 macro -0.2734, acurácia balanceada -0.1375, maior queda de recall -0.543 (MSSQL)) é COMPATÍVEL com mudança de distribuição entre os dias (classe mais distinta: Syn, ROC-AUC adversarial 1.000; atributos: max_packet_length, total_length_of_fwd_packets, fwd_packet_length_max, flow_bytes_s, avg_fwd_segment_size)",
+   "curva_ganho_50_100": {
+    "ganho_roc_auc": -0.00019930498948916853,
+    "situacao": "pequena"
+   }
+  },
+  "SVM padrão": {
+   "Q1_decorar_o_treino": "pequena",
+   "Q2_generalizar_outro_dia": "grande",
+   "Q2_so_modelo": "grande",
+   "leitura": "sem sinal de decorar o treino (lacuna treino−validação: acurácia balanceada -0.0018, ROC-AUC -0.00064; CV−validação (acurácia balanceada) -0.0021); a queda no teste (validação→teste: ROC-AUC -0.0902, F1 macro -0.2543, acurácia balanceada -0.1716, maior queda de recall -0.703 (UDPLag)) é COMPATÍVEL com mudança de distribuição entre os dias (classe mais distinta: Syn, ROC-AUC adversarial 1.000; atributos: max_packet_length, total_length_of_fwd_packets, fwd_packet_length_max, flow_bytes_s, avg_fwd_segment_size)",
+   "curva_ganho_50_100": {
+    "ganho_roc_auc": 0.00012731624848349998,
+    "situacao": "pequena"
+   }
+  }
+ },
+ "embaralhamento_de_rotulos": {
+  "RF ajustado": {
+   "repeticoes": 5,
+   "roc_auc_medio": 0.4972,
+   "roc_auc_min": 0.4895,
+   "roc_auc_max": 0.5028,
+   "leitura": "ok: em torno de 0,5"
+  },
+  "SVM ajustado": {
+   "repeticoes": 2,
+   "roc_auc_medio": 0.4695,
+   "roc_auc_min": 0.4161,
+   "roc_auc_max": 0.5228,
+   "leitura": "inconclusivo (2 repetições com grande variação; não conta como alerta de vazamento)"
+  }
+ },
+ "sobreposicao_ajuste_validacao": {
+  "linhas_na_validacao": 59918,
+  "linhas_com_vetor_identico_ao_do_ajuste": 1207,
+  "fracao": 0.02014,
+  "conflitos_rotulo_diferente": 1129,
+  "fracao_conflitos": 0.01884,
+  "duplicatas_mesmo_rotulo": 78,
+  "fracao_duplicatas_mesmo_rotulo": 0.0013,
+  "leitura": "A sobreposição é quase toda de CONFLITOS entre classes (94%): essas linhas penalizam a validação e não a inflam. As duplicatas com o mesmo rótulo são só 0,13% das linhas da validação, então a validação do mesmo dia não é otimista por vetores repetidos.",
+  "por_classe": {
+   "BENIGN": {
+    "idênticas": 10,
+    "conflitos": 1
+   },
+   "LDAP": {
+    "idênticas": 98,
+    "conflitos": 98
+   },
+   "MSSQL": {
+    "idênticas": 444,
+    "conflitos": 440
+   },
+   "NetBIOS": {
+    "idênticas": 399,
+    "conflitos": 362
+   },
+   "Syn": {
+    "idênticas": 77,
+    "conflitos": 66
+   },
+   "UDP": {
+    "idênticas": 44,
+    "conflitos": 44
+   },
+   "UDPLag": {
+    "idênticas": 135,
+    "conflitos": 118
+   }
+  },
+  "gravidade_da_otimismo_por_duplicatas": "pequena",
+  "gravidade_dos_conflitos": "moderada"
+ },
+ "regras": {
+  "lacuna_acc_bal": [
+   0.01,
+   0.03
+  ],
+  "lacuna_roc_auc": [
+   0.005,
+   0.02
+  ],
+  "embaralhamento_media": 0.03,
+  "embaralhamento_max": 0.1,
+  "sobreposicao_validacao": [
+   0.01,
+   0.1
+  ],
+  "curva_ganho_50_100": [
+   0.0005,
+   0.003
+  ],
+  "queda_roc_auc_teste": [
+   0.005,
+   0.02
+  ],
+  "queda_f1_macro_teste": [
+   0.03,
+   0.1
+  ],
+  "queda_acc_bal_teste": [
+   0.02,
+   0.08
+  ],
+  "queda_recall_classe": [
+   0.05,
+   0.2
+  ],
+  "min_linhas_recall_classe": 200,
+  "auc_adversarial": [
+   0.6,
+   0.8
+  ],
+  "min_linhas_unicas_adversarial": 200,
+  "observacao": "regras do notebook, sem alteração; a correção é na LEITURA do embaralhamento do SVM (inconclusivo) e na separação entre duplicatas e conflitos"
+ },
+ "modelos": {
+  "rf_ajustado": "100|None|5 (árvores|profundidade|folha) | rfm_busca_20261102_001711",
+  "rf_padrao": "100|None|1 (árvores|profundidade|folha) | rfm_20261101_210334",
+  "svm_ajustado": "C = 100 | gamma = 4× | svm_busca_20261107_013148",
+  "svm_padrao": "C = 1 | gamma = 1× | svm_busca_20261107_013148"
+ },
+ "ganho_curva_50_100": {
+  "RF ajustado": 0.0003725444419551138,
+  "RF padrão": -0.00025432899287669564,
+  "SVM ajustado": -0.00019930498948916853,
+  "SVM padrão": 0.00012731624848349998
+ },
+ "adversarial_pior_gravidade": "grande",
+ "parametros": {
+  "n_treino_svm_aval": 20000,
+  "n_adv": 20000,
+  "reps_curva_rf": 3,
+  "n_perm_rf": 5,
+  "n_perm_svm": 2,
+  "semente": 42
+ },
+ "data_original": "2026-11-12T00:18:56"
+}

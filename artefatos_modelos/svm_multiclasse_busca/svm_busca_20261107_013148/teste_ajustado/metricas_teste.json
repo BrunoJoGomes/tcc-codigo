@@ -1,0 +1,237 @@
+{
+ "run_id": "20261107_013148",
+ "modelo": "ajustado",
+ "data_teste": "2026-11-08T22:25:08",
+ "n_teste": 7216487,
+ "classes": [
+  "BENIGN",
+  "LDAP",
+  "MSSQL",
+  "NetBIOS",
+  "Syn",
+  "UDP",
+  "UDPLag"
+ ],
+ "metricas": {
+  "acuracia": 0.5645706837689862,
+  "acuracia_balanceada": 0.7335024091901776,
+  "precisao_macro": 0.6817893916436895,
+  "f1_macro": 0.6022177750497961,
+  "f1_ponderado": 0.6895296649028562,
+  "mcc": 0.5172397034418316,
+  "roc_auc_ovr_macro": 0.8997374013860409
+ },
+ "metricas_sem_classe_especial": {
+  "classe": "UDPLag",
+  "f1_macro": 0.7025622880657801,
+  "acuracia_balanceada": 0.7980029603328852
+ },
+ "por_classe": {
+  "BENIGN": {
+   "linhas no teste": 56216,
+   "% do teste": 0.7789939897348945,
+   "recall": 0.9850220577771452,
+   "IC95% recall (inf.)": 0.9839843070306713,
+   "IC95% recall (sup.)": 0.9859935237144084,
+   "precisão": 0.8603791174642635,
+   "F1": 0.9184912420382165,
+   "ROC-AUC um-contra-resto": 0.9960460798816257,
+   "previstas como a classe": 64360
+  },
+  "LDAP": {
+   "linhas no teste": 112491,
+   "% do teste": 1.5588055517871784,
+   "recall": 0.9823452542870096,
+   "IC95% recall (inf.)": 0.9815590284850817,
+   "IC95% recall (sup.)": 0.9830985367556697,
+   "precisão": 0.7829626533084875,
+   "F1": 0.8713943255476525,
+   "ROC-AUC um-contra-resto": 0.9935616361351802,
+   "previstas como a classe": 141137
+  },
+  "MSSQL": {
+   "linhas no teste": 854242,
+   "% do teste": 11.837366297479646,
+   "recall": 0.3748036270752316,
+   "IC95% recall (inf.)": 0.37377765259542145,
+   "IC95% recall (sup.)": 0.3758307275877663,
+   "precisão": 0.9841544533516943,
+   "F1": 0.5428639249896149,
+   "ROC-AUC um-contra-resto": 0.9977796414681022,
+   "previstas como a classe": 325328
+  },
+  "NetBIOS": {
+   "linhas no teste": 91175,
+   "% do teste": 1.2634263735249576,
+   "recall": 0.9987277214148615,
+   "IC95% recall (inf.)": 0.9984743776826067,
+   "IC95% recall (sup.)": 0.9989390397741028,
+   "precisão": 0.14506239216979464,
+   "F1": 0.2533294013893487,
+   "ROC-AUC um-contra-resto": 0.9910354357946644,
+   "previstas como a classe": 627723
+  },
+  "Syn": {
+   "linhas no teste": 4887060,
+   "% do teste": 67.72076219357147,
+   "recall": 0.4735517877824295,
+   "IC95% recall (inf.)": 0.473109124768427,
+   "IC95% recall (sup.)": 0.4739944923770029,
+   "precisão": 0.9999796916852142,
+   "F1": 0.6427309865341143,
+   "ROC-AUC um-contra-resto": 0.9941103904207905,
+   "previstas como a classe": 2314323
+  },
+  "UDP": {
+   "linhas no teste": 1214746,
+   "% do teste": 16.83292715693938,
+   "recall": 0.9735673136606335,
+   "IC95% recall (inf.)": 0.9732805353993456,
+   "IC95% recall (sup.)": 0.9738510966448203,
+   "precisão": 0.999912068660848,
+   "F1": 0.9865638478957341,
+   "ROC-AUC um-contra-resto": 0.9986081604277265,
+   "previstas como a classe": 1182741
+  },
+  "UDPLag": {
+   "linhas no teste": 557,
+   "% do teste": 0.007718436962472183,
+   "recall": 0.3464991023339318,
+   "IC95% recall (inf.)": 0.30815338595585673,
+   "IC95% recall (sup.)": 0.3869476907117799,
+   "precisão": 7.536486552447894e-05,
+   "F1": 0.000150696953891417,
+   "ROC-AUC um-contra-resto": 0.32702046557419595,
+   "previstas como a classe": 2560875
+  }
+ },
+ "matriz_confusao": {
+  "real BENIGN": {
+   "prev. BENIGN": 55374,
+   "prev. LDAP": 36,
+   "prev. MSSQL": 66,
+   "prev. NetBIOS": 692,
+   "prev. Syn": 3,
+   "prev. UDP": 8,
+   "prev. UDPLag": 37
+  },
+  "real LDAP": {
+   "prev. BENIGN": 54,
+   "prev. LDAP": 110505,
+   "prev. MSSQL": 614,
+   "prev. NetBIOS": 1249,
+   "prev. Syn": 38,
+   "prev. UDP": 0,
+   "prev. UDPLag": 31
+  },
+  "real MSSQL": {
+   "prev. BENIGN": 198,
+   "prev. LDAP": 30505,
+   "prev. MSSQL": 320173,
+   "prev. NetBIOS": 503301,
+   "prev. Syn": 2,
+   "prev. UDP": 33,
+   "prev. UDPLag": 30
+  },
+  "real NetBIOS": {
+   "prev. BENIGN": 53,
+   "prev. LDAP": 0,
+   "prev. MSSQL": 18,
+   "prev. NetBIOS": 91059,
+   "prev. Syn": 1,
+   "prev. UDP": 4,
+   "prev. UDPLag": 40
+  },
+  "real Syn": {
+   "prev. BENIGN": 8553,
+   "prev. LDAP": 88,
+   "prev. MSSQL": 1473,
+   "prev. NetBIOS": 2371,
+   "prev. Syn": 2314276,
+   "prev. UDP": 8,
+   "prev. UDPLag": 2560291
+  },
+  "real UDP": {
+   "prev. BENIGN": 85,
+   "prev. LDAP": 1,
+   "prev. MSSQL": 2819,
+   "prev. NetBIOS": 28950,
+   "prev. Syn": 1,
+   "prev. UDP": 1182637,
+   "prev. UDPLag": 253
+  },
+  "real UDPLag": {
+   "prev. BENIGN": 43,
+   "prev. LDAP": 2,
+   "prev. MSSQL": 165,
+   "prev. NetBIOS": 101,
+   "prev. Syn": 2,
+   "prev. UDP": 51,
+   "prev. UDPLag": 193
+  }
+ },
+ "validacao_vs_teste": {
+  "roc_auc_ovr_macro": {
+   "validação (sem pesos)": 0.9735541252518336,
+   "teste": 0.8997374013860409,
+   "Δ": -0.07381672386579274
+  },
+  "acuracia_balanceada": {
+   "validação (sem pesos)": 0.8710436084073636,
+   "teste": 0.7335024091901776,
+   "Δ": -0.137541199217186
+  },
+  "acuracia": {
+   "validação (sem pesos)": 0.8986948830067759,
+   "teste": 0.5645706837689862,
+   "Δ": -0.3341241992377897
+  },
+  "precisao_macro": {
+   "validação (sem pesos)": 0.9010538249376118,
+   "teste": 0.6817893916436895,
+   "Δ": -0.2192644332939223
+  },
+  "f1_macro": {
+   "validação (sem pesos)": 0.8756564004266724,
+   "teste": 0.6022177750497961,
+   "Δ": -0.27343862537687624
+  },
+  "f1_ponderado": {
+   "validação (sem pesos)": 0.893854739174264,
+   "teste": 0.6895296649028562,
+   "Δ": -0.20432507427140778
+  },
+  "mcc": {
+   "validação (sem pesos)": 0.8824503663127142,
+   "teste": 0.5172397034418316,
+   "Δ": -0.36521066287088266
+  }
+ },
+ "classes_desconhecidas": {
+  "Portmap": {
+   "BENIGN": 89,
+   "LDAP": 3,
+   "MSSQL": 91,
+   "NetBIOS": 2435,
+   "Syn": 4,
+   "UDP": 0,
+   "UDPLag": 80
+  }
+ },
+ "custo": {
+  "vetores_distintos": 1865985,
+  "linhas": 7216487,
+  "vetores_de_suporte": 77699,
+  "relogio_previsao_s": 22647.300259700045,
+  "soma_tempos_tarefas_s": 22123.385914306156,
+  "ganho_paralelismo": 0.9768663664372317,
+  "max_simultaneos": 1,
+  "vazao_vetores_s": 82.3932644775521,
+  "vazao_linhas_equivalente_s": 318.64667829045595,
+  "equivalencia": {
+   "n": 3000,
+   "acordo": 1.0,
+   "dif_max": 2.3839290630434107e-07
+  }
+ }
+}

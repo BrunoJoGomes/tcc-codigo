@@ -1,0 +1,146 @@
+{
+ "run_id": "20261109_173230",
+ "modo": "bin",
+ "impressao": "c95c7f58911f",
+ "modelos": {
+  "rf_ajustado": {
+   "rotulo": "RF ajustado",
+   "arquivo": "C:\\Users\\Bruno\\downloads\\tcc_codigo\\railway-ch\\artefatos_modelos\\rf_binario_busca\\rf_busca_20261024_175105\\modelo_final_refit.joblib",
+   "familia": "RF",
+   "descricao": "300 árvores | profundidade 15 | folha 1 | rf_busca_20261024_175105"
+  },
+  "rf_padrao": {
+   "rotulo": "RF padrão",
+   "arquivo": "C:\\Users\\Bruno\\downloads\\tcc_codigo\\railway-ch\\artefatos_modelos\\rf_binario\\rf_bin_20261021_221311\\modelo_final_refit.joblib",
+   "familia": "RF",
+   "descricao": "100 árvores | profundidade livre | folha 1 | rf_bin_20261021_221311"
+  },
+  "svm_ajustado": {
+   "rotulo": "SVM ajustado",
+   "arquivo": "C:\\Users\\Bruno\\downloads\\tcc_codigo\\railway-ch\\artefatos_modelos\\svm_binario_busca\\svm_busca_20261025_004828\\modelo_final_refit.joblib",
+   "familia": "SVM",
+   "descricao": "C = 100.0 | gamma = 4.0× | svm_busca_20261025_004828"
+  },
+  "svm_padrao": {
+   "rotulo": "SVM padrão",
+   "arquivo": "C:\\Users\\Bruno\\downloads\\tcc_codigo\\railway-ch\\artefatos_modelos\\svm_binario_busca\\svm_busca_20261025_004828\\modelo_padrao_refit.joblib",
+   "familia": "SVM",
+   "descricao": "C = 1 | gamma = 1× | svm_busca_20261025_004828"
+  }
+ },
+ "atributos": [
+  "avg_fwd_segment_size",
+  "bwd_header_length",
+  "max_packet_length",
+  "bwd_iat_max",
+  "bwd_iat_total",
+  "bwd_iat_mean",
+  "fwd_packet_length_max",
+  "total_length_of_fwd_packets",
+  "bwd_iat_min",
+  "down_up_ratio",
+  "flow_bytes_s",
+  "flow_iat_max",
+  "packet_length_std",
+  "packet_length_variance",
+  "bwd_packet_length_max",
+  "total_length_of_bwd_packets",
+  "avg_bwd_segment_size",
+  "flow_iat_mean",
+  "fwd_packets_s",
+  "fwd_header_length",
+  "flow_duration",
+  "init_win_bytes_forward",
+  "flow_iat_std",
+  "init_win_bytes_backward",
+  "bwd_packet_length_min",
+  "protocol",
+  "urg_flag_count",
+  "total_fwd_packets",
+  "flow_iat_min",
+  "min_seg_size_forward",
+  "act_data_pkt_fwd",
+  "bwd_iat_std",
+  "cwe_flag_count",
+  "bwd_packet_length_std",
+  "fwd_packet_length_std",
+  "fwd_psh_flags",
+  "idle_min",
+  "active_min",
+  "idle_std",
+  "active_max",
+  "ack_flag_count",
+  "active_std",
+  "flow_bytes_s_ausente"
+ ],
+ "grupos": {
+  "treino": [
+   "BENIGN",
+   "DNS",
+   "LDAP",
+   "MSSQL",
+   "NTP",
+   "NetBIOS",
+   "SNMP",
+   "SSDP",
+   "Syn",
+   "TFTP",
+   "UDP",
+   "UDPLag",
+   "WebDDoS"
+  ],
+  "teste": [
+   "BENIGN",
+   "LDAP",
+   "MSSQL",
+   "NetBIOS",
+   "Portmap",
+   "Syn",
+   "UDP",
+   "UDPLag"
+  ]
+ },
+ "n_por_grupo": {
+  "RF": 300,
+  "SVM": 60
+ },
+ "fundo_svm": {
+  "linhas_por_grupo": 1,
+  "linhas": 24,
+  "permutacoes": 1
+ },
+ "semente": 42,
+ "saida_explicada": "multiclasse: a classe REAL da linha (probabilidade no RF; função de decisão um-contra-resto no SVM) | binário: a saída 'ataque' (probabilidade no RF; função de decisão no SVM)",
+ "explicadores": {
+  "RF": "shap.TreeExplainer (exato; shap 0.54.1)",
+  "SVM": "shap.PermutationExplainer sobre a função de decisão, com fundo estratificado (shap 0.54.1)"
+ },
+ "regras_estabilidade": {
+  "rho_metade_geral": 0.9,
+  "sobreposicao_top10_geral": 7,
+  "rho_convergencia_50pct": 0.95,
+  "rho_metade_grupo": 0.8
+ },
+ "versoes": {
+  "views": "20261018_180729",
+  "selecao": "20261018_204854"
+ },
+ "hardware": {
+  "so": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "nucleos_logicos": 12,
+  "nucleos_fisicos": 10,
+  "ram_total_gib": 7.692127227783203
+ },
+ "paralelismo": {
+  "processos_max": 4,
+  "estatisticas_sessao": {
+   "max_simultaneos": 1.0,
+   "interrompidos_por_memoria": 0.0,
+   "ram_proc_final": 1.0,
+   "relogio_s": 2173.2435133000836,
+   "soma_tempos_tarefas_s": 1913.8289462989196,
+   "ganho_paralelismo": 0.8806325359244987
+  }
+ }
+}

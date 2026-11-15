@@ -1,0 +1,131 @@
+{
+ "veredito": {
+  "RF ajustado": {
+   "Q1_decorar_o_treino": "moderada",
+   "Q2_generalizar_outro_dia": "grande",
+   "Q2_so_modelo": "grande",
+   "leitura": "HÁ SINAL de lacuna treino−validação (lacuna treino−validação: acurácia balanceada +0.0199, ROC-AUC +0.00288; CV−validação (acurácia balanceada) +0.0005) — esperado para árvores sem limite de profundidade, que acertam o treino por construção; o que importa é a validação cruzada concordar com a validação e o embaralhamento ficar em 0,5",
+   "curva_ganho_50_100": {
+    "ganho_roc_auc": 0.0003725444419551138,
+    "situacao": "pequena"
+   }
+  },
+  "RF padrão": {
+   "Q1_decorar_o_treino": "grande",
+   "Q2_generalizar_outro_dia": "grande",
+   "Q2_so_modelo": "grande",
+   "leitura": "HÁ SINAL de lacuna treino−validação (lacuna treino−validação: acurácia balanceada +0.0885, ROC-AUC +0.00971; CV−validação (acurácia balanceada) +0.0015) — esperado para árvores sem limite de profundidade, que acertam o treino por construção; o que importa é a validação cruzada concordar com a validação e o embaralhamento ficar em 0,5",
+   "curva_ganho_50_100": {
+    "ganho_roc_auc": -0.00025432899287669564,
+    "situacao": "pequena"
+   }
+  },
+  "SVM ajustado": {
+   "Q1_decorar_o_treino": "grande",
+   "Q2_generalizar_outro_dia": "grande",
+   "Q2_so_modelo": "grande",
+   "leitura": "HÁ SINAL de lacuna treino−validação (lacuna treino−validação: acurácia balanceada -0.0014, ROC-AUC -0.00003; CV−validação (acurácia balanceada) -0.0020) — o embaralhamento de rótulos fugiu de 0,5 (investigar vazamento)",
+   "curva_ganho_50_100": {
+    "ganho_roc_auc": -0.00019930498948916853,
+    "situacao": "pequena"
+   }
+  },
+  "SVM padrão": {
+   "Q1_decorar_o_treino": "pequena",
+   "Q2_generalizar_outro_dia": "grande",
+   "Q2_so_modelo": "grande",
+   "leitura": "sem sinal de decorar o treino (lacuna treino−validação: acurácia balanceada -0.0018, ROC-AUC -0.00064; CV−validação (acurácia balanceada) -0.0021); a queda no teste (validação→teste: ROC-AUC -0.0902, F1 macro -0.2543, acurácia balanceada -0.1716, maior queda de recall -0.703 (UDPLag)) é COMPATÍVEL com mudança de distribuição entre os dias (classe mais distinta: Syn, ROC-AUC adversarial 1.000; atributos: max_packet_length, total_length_of_fwd_packets, fwd_packet_length_max, flow_bytes_s, avg_fwd_segment_size)",
+   "curva_ganho_50_100": {
+    "ganho_roc_auc": 0.00012731624848349998,
+    "situacao": "pequena"
+   }
+  }
+ },
+ "sobreposicao_ajuste_validacao": {
+  "fracao_validacao_com_vetor_do_ajuste": 0.02014419706932808,
+  "linhas": 1207,
+  "conflitos": 1129,
+  "gravidade_geral": "moderada",
+  "pior_gravidade_por_grupo": "grande",
+  "regra": [
+   0.01,
+   0.1
+  ]
+ },
+ "regras": {
+  "lacuna_acc_bal": [
+   0.01,
+   0.03
+  ],
+  "lacuna_roc_auc": [
+   0.005,
+   0.02
+  ],
+  "embaralhamento_media": 0.03,
+  "embaralhamento_max": 0.1,
+  "sobreposicao_validacao": [
+   0.01,
+   0.1
+  ],
+  "curva_ganho_50_100": [
+   0.0005,
+   0.003
+  ],
+  "queda_roc_auc_teste": [
+   0.005,
+   0.02
+  ],
+  "queda_f1_macro_teste": [
+   0.03,
+   0.1
+  ],
+  "queda_acc_bal_teste": [
+   0.02,
+   0.08
+  ],
+  "queda_recall_classe": [
+   0.05,
+   0.2
+  ],
+  "min_linhas_recall_classe": 200,
+  "auc_adversarial": [
+   0.6,
+   0.8
+  ],
+  "min_linhas_unicas_adversarial": 200
+ },
+ "modelos": {
+  "rf_ajustado": {
+   "rotulo": "RF ajustado",
+   "descricao": "100|None|5 (árvores|profundidade|folha) | rfm_busca_20261102_001711"
+  },
+  "rf_padrao": {
+   "rotulo": "RF padrão",
+   "descricao": "100|None|1 (árvores|profundidade|folha) | rfm_20261101_210334"
+  },
+  "svm_ajustado": {
+   "rotulo": "SVM ajustado",
+   "descricao": "C = 100 | gamma = 4× | svm_busca_20261107_013148"
+  },
+  "svm_padrao": {
+   "rotulo": "SVM padrão",
+   "descricao": "C = 1 | gamma = 1× | svm_busca_20261107_013148"
+  }
+ },
+ "ganho_curva_50_100": {
+  "RF ajustado": 0.0003725444419551138,
+  "RF padrão": -0.00025432899287669564,
+  "SVM ajustado": -0.00019930498948916853,
+  "SVM padrão": 0.00012731624848349998
+ },
+ "adversarial_pior_gravidade": "grande",
+ "parametros": {
+  "n_treino_svm_aval": 20000,
+  "n_adv": 20000,
+  "reps_curva_rf": 3,
+  "n_perm_rf": 5,
+  "n_perm_svm": 2,
+  "semente": 42
+ },
+ "data": "2026-11-12T00:18:56"
+}

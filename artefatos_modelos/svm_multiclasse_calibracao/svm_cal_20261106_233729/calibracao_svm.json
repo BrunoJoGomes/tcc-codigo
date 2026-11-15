@@ -1,0 +1,122 @@
+{
+ "run_id": "20261106_233729",
+ "data": "2026-11-07T00:41:23",
+ "hardware": {
+  "so": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+  "nucleos_logicos": 12,
+  "nucleos_fisicos": 10,
+  "ram_total_gib": 7.692127227783203
+ },
+ "software": {
+  "scikit-learn": "1.9.1",
+  "numpy": "2.5.3",
+  "pandas": "2.3.3",
+  "joblib": "1.6.0",
+  "psutil": "7.2.2"
+ },
+ "normalizador": "StandardScaler só nas colunas numéricas, ajustado no próprio treino; indicadores _ausente em 0/1 (o mesmo do binário)",
+ "class_weight": "balanced",
+ "parametros": {
+  "tamanhos_por_classe": [
+   1000,
+   2000,
+   4000,
+   8000,
+   16000
+  ],
+  "c_valores": [
+   1.0,
+   10.0,
+   100.0
+  ],
+  "gamma_fatores": [
+   0.25,
+   1.0,
+   4.0
+  ],
+  "cache_mb": 200,
+  "orcamento_fit_s": 1500,
+  "orcamento_sens_s": 120,
+  "ganho_previsao": 1.84,
+  "ganho_treino": 1.0
+ },
+ "medidas": {
+  "maior_tamanho_medido": 111592,
+  "expoente_tempo": 2.274697057367248,
+  "expoente_vetores_suporte": 0.8826013897956584,
+  "ns_por_par": 185.3145879472699,
+  "expoentes_supostos": false,
+  "amostra_sensibilidade_por_classe": 8000,
+  "gamma_scale": 0.023779350961845278,
+  "fator_medio_grade": 1.0675813840947288,
+  "fator_max_grade": 1.4139825303918385,
+  "razao_sv_media": 0.9589234090825923,
+  "fator_tempo_canto": 1.3086496979604465,
+  "razao_sv_canto": 0.9080030738829729,
+  "configuracoes_que_passaram_do_limite": 0
+ },
+ "estimativas_busca": [
+  {
+   "linhas por classe": 2000,
+   "linhas totais": 14000,
+   "extrapolado": false,
+   "busca CV 5 dobras (h)": 0.22659239935545167,
+   "busca só validação (h)": 0.16571539404902827
+  },
+  {
+   "linhas por classe": 4000,
+   "linhas totais": 28000,
+   "extrapolado": false,
+   "busca CV 5 dobras (h)": 0.5966827105741548,
+   "busca só validação (h)": 0.3364386251695843
+  },
+  {
+   "linhas por classe": 8000,
+   "linhas totais": 56000,
+   "extrapolado": false,
+   "busca CV 5 dobras (h)": 1.9025571185056667,
+   "busca só validação (h)": 0.7698615614886729
+  },
+  {
+   "linhas por classe": 16000,
+   "linhas totais": 111592,
+   "extrapolado": false,
+   "busca CV 5 dobras (h)": 7.1052182949112925,
+   "busca só validação (h)": 2.1303597385408617
+  },
+  {
+   "linhas por classe": 40000,
+   "linhas totais": 239671,
+   "extrapolado": true,
+   "busca CV 5 dobras (h)": 34.626735689196394,
+   "busca só validação (h)": 8.504850189721305
+  }
+ ],
+ "estimativas_modelo_final": {
+  "como a configuração base (C = 1, gamma = scale)": {
+   "refit (h)": 1.1409540498935955,
+   "vetores de suporte (milhares)": 81.6692576140902,
+   "previsão do teste (h)": 16.488218192113063
+  },
+  "como o canto C = 100, gamma = 4×": {
+   "refit (h)": 1.4931091727800019,
+   "vetores de suporte (milhares)": 74.15593695533428,
+   "previsão do teste (h)": 14.971352801291815
+  }
+ },
+ "recomendacao": {
+  "protocolo": "cv5",
+  "linhas_por_classe": 8000
+ },
+ "limites_h": {
+  "busca": 6.0,
+  "teste": 1.5
+ },
+ "tempos_etapas_s": {
+  "3.1_tamanho": 1406.881314900238,
+  "4.1_sensibilidade": 2406.238801599946
+ },
+ "observacao": "calibração de custo; não escolhe hiperparâmetros. ROC-AUC e acurácia da validação são informativos"
+}

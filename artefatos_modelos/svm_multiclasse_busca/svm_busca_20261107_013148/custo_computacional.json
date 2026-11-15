@@ -1,0 +1,114 @@
+{
+ "fit_ajuste": {
+  "relogio_s": 2730.1098914998583,
+  "cpu_s": 2723.59375,
+  "pico_ram_mib": 756.703125,
+  "acrescimo_ram_mib": 428.9375
+ },
+ "fit_refit": {
+  "repeticoes": 1,
+  "relogio_mediana_s": 5308.42660749983,
+  "relogio_min_s": 5308.42660749983,
+  "relogio_max_s": 5308.42660749983,
+  "cpu_mediana_s": 5300.546875,
+  "pico_ram_max_mib": 742.53515625,
+  "acrescimo_ram_max_mib": 493.0078125
+ },
+ "fit_refit_repeticoes": [
+  {
+   "repeticao": 1,
+   "relogio_s": 5308.42660749983,
+   "cpu_s": 5300.546875,
+   "pico_ram_mib": 742.53515625,
+   "acrescimo_ram_mib": 493.0078125,
+   "n_sv": 77699
+  }
+ ],
+ "modelo_ajuste": {
+  "arquivo_mib": 4.003486633300781,
+  "n_vetores_suporte": 62797,
+  "n_sv_por_classe": [
+   2928,
+   3227,
+   21978,
+   8239,
+   3533,
+   9894,
+   12998
+  ],
+  "n_atributos": 44,
+  "C": 100.0,
+  "gamma": 0.09514619264617266,
+  "kernel": "rbf"
+ },
+ "modelo_final": {
+  "arquivo_mib": 4.87766170501709,
+  "n_vetores_suporte": 77699,
+  "n_sv_por_classe": [
+   3331,
+   4022,
+   27393,
+   10217,
+   4368,
+   12225,
+   16143
+  ],
+  "n_atributos": 44,
+  "C": 100.0,
+  "gamma": 0.09514619264617266,
+  "kernel": "rbf"
+ },
+ "inferencia_modelo_ajuste": [
+  {
+   "n_jobs": 1,
+   "n_latencia": 1000,
+   "latencia_modelo_p50_ms": 12.556249974295497,
+   "latencia_modelo_p95_ms": 19.967870227992535,
+   "latencia_modelo_p99_ms": 21.35868711862713,
+   "latencia_fim_a_fim_p50_ms": 12.686549918726087,
+   "latencia_fim_a_fim_p95_ms": 20.205970061942935,
+   "latencia_fim_a_fim_p99_ms": 22.872947123833,
+   "vazao_modelo_fluxos_s": 96.79124698261691,
+   "vazao_fim_a_fim_fluxos_s": 96.5478711629164,
+   "n_lote": 5000
+  }
+ ],
+ "inferencia_modelo_final": [
+  {
+   "n_jobs": 1,
+   "n_latencia": 1000,
+   "latencia_modelo_p50_ms": 14.522750163450837,
+   "latencia_modelo_p95_ms": 18.034715112298723,
+   "latencia_modelo_p99_ms": 24.31957584340125,
+   "latencia_fim_a_fim_p50_ms": 14.642099849879742,
+   "latencia_fim_a_fim_p95_ms": 18.786114710383114,
+   "latencia_fim_a_fim_p99_ms": 25.003574145957828,
+   "vazao_modelo_fluxos_s": 79.34170960653384,
+   "vazao_fim_a_fim_fluxos_s": 77.94540729800073,
+   "n_lote": 5000
+  }
+ ],
+ "modelo_padrao": {
+  "arquivo_mib": 4.986395835876465,
+  "n_vetores_suporte": 84556,
+  "n_sv_por_classe": [
+   2487,
+   4082,
+   30508,
+   11627,
+   5417,
+   13104,
+   17331
+  ],
+  "n_atributos": 44,
+  "C": 1.0,
+  "gamma": 0.023786548161543165,
+  "kernel": "rbf"
+ },
+ "fit_refit_padrao": {
+  "relogio_s": 4257.066969400272,
+  "cpu_s": 4247.140625,
+  "pico_ram_mib": 796.77734375,
+  "n_sv": 84556
+ }
+}

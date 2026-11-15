@@ -1,0 +1,18 @@
+{
+ "config": "padrao",
+ "semente": 45,
+ "hiperparametros": {
+  "n_estimators": 100,
+  "max_depth": null,
+  "min_samples_split": 2,
+  "min_samples_leaf": 1,
+  "max_features": "sqrt",
+  "class_weight": "balanced",
+  "random_state": 45,
+  "n_jobs": -1
+ },
+ "treino_relogio_s": 53.49670000001788,
+ "nos_total": 4298722,
+ "arquivo_mib": 67.22193336486816,
+ "gravado_em": "2026-11-06T22:51:44"
+}

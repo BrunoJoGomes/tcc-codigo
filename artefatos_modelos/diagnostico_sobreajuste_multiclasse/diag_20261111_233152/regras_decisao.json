@@ -1,0 +1,46 @@
+{
+ "gravado_em": "2026-11-11T23:31:52",
+ "observacao": "regras gravadas ANTES de calcular qualquer resultado deste diagnóstico (são as da introdução do notebook). As de Q2 com F1 macro, acurácia balanceada e recall por classe são convenções novas para o multiclasse, escritas já conhecendo os resultados do teste.",
+ "regras": {
+  "lacuna_acc_bal": [
+   0.01,
+   0.03
+  ],
+  "lacuna_roc_auc": [
+   0.005,
+   0.02
+  ],
+  "embaralhamento_media": 0.03,
+  "embaralhamento_max": 0.1,
+  "sobreposicao_validacao": [
+   0.01,
+   0.1
+  ],
+  "curva_ganho_50_100": [
+   0.0005,
+   0.003
+  ],
+  "queda_roc_auc_teste": [
+   0.005,
+   0.02
+  ],
+  "queda_f1_macro_teste": [
+   0.03,
+   0.1
+  ],
+  "queda_acc_bal_teste": [
+   0.02,
+   0.08
+  ],
+  "queda_recall_classe": [
+   0.05,
+   0.2
+  ],
+  "min_linhas_recall_classe": 200,
+  "auc_adversarial": [
+   0.6,
+   0.8
+  ],
+  "min_linhas_unicas_adversarial": 200
+ }
+}

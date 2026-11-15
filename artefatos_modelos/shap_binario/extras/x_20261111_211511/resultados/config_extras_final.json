@@ -1,0 +1,78 @@
+{
+ "run_id": "20261111_211511",
+ "modo": "bin",
+ "pai": "shap_20261109_173230",
+ "impressao": "09d9499f1d2d",
+ "reaproveitado_do_notebook_14": {
+  "svm_fundo_base_todas_as_linhas": [
+   "svm_ajustado",
+   "svm_padrao"
+  ],
+  "rf_treeexplainer": [
+   "rf_ajustado",
+   "rf_padrao"
+  ]
+ },
+ "variantes": {
+  "perm_bg1": {
+   "fundo": "bg1",
+   "linhas_do_fundo": 24,
+   "modelos": [
+    "rf_ajustado",
+    "rf_padrao"
+   ],
+   "explicador": "perm"
+  }
+ },
+ "fundo_ids": [
+  17694779262274113725,
+  13996950005507579668,
+  8023104946119251546,
+  2795652643922870169,
+  11914388704031237773,
+  16173212735732720883,
+  5489374516930457799,
+  3764456120216186295,
+  15584260880632172508,
+  7188007887579802826,
+  1262317879013319432,
+  15005467568851443256,
+  13065549721454203873,
+  285009565111982612,
+  515317483652993662,
+  3500735145426075872,
+  17127791062968619460,
+  2204444015412200041,
+  13528415976962387781,
+  10722446893735807696,
+  18317240581284976162,
+  17621858353515372303,
+  13924555736848926312,
+  5622069904005407283
+ ],
+ "semente": 42,
+ "permutacoes": 1,
+ "atributos_negativos": [
+  "fwd_header_length",
+  "min_seg_size_forward"
+ ],
+ "tree_interventional": false,
+ "hardware": {
+  "so": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "nucleos_logicos": 12,
+  "nucleos_fisicos": 10,
+  "ram_total_gib": 7.692127227783203
+ },
+ "paralelismo": {
+  "processos_max": 4,
+  "estatisticas_sessao": {
+   "max_simultaneos": 1.0,
+   "interrompidos_por_memoria": 0.0,
+   "ram_proc_final": 1.0,
+   "relogio_s": 670.1455932999961,
+   "soma_tempos_tarefas_s": 402.23840119922534,
+   "ganho_paralelismo": 0.6002253916473342
+  }
+ }
+}

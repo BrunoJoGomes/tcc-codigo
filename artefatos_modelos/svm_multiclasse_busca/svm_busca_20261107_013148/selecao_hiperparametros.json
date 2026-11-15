@@ -1,0 +1,55 @@
+{
+ "escolhida": {
+  "C": 100.0,
+  "gamma_fator": 4.0,
+  "gamma": 0.09514619264617266,
+  "config": "C=100|gamma=4x"
+ },
+ "usou_plano_b": true,
+ "passo1": {
+  "roc_auc": {
+   "melhor": "C=1|gamma=4x",
+   "valor_melhor": 0.9754546510533965,
+   "erro_padrao_melhor": 0.00010942777725223358,
+   "limite": 0.9753452232761443,
+   "n_empatadas": 1
+  },
+  "mcc": {
+   "melhor": "C=100|gamma=4x",
+   "valor_melhor": 0.8810500600695821,
+   "erro_padrao_melhor": 0.00047395629280586597,
+   "limite": 0.8805761037767762,
+   "n_empatadas": 1
+  }
+ },
+ "n_elegiveis": 3,
+ "elegiveis": [
+  {
+   "config": "C=100|gamma=4x",
+   "cv_roc_auc": 0.9733427856714021,
+   "cv_mcc": 0.8810500600695821,
+   "n_sv": 62797
+  },
+  {
+   "config": "C=10|gamma=4x",
+   "cv_roc_auc": 0.9739886050759348,
+   "cv_mcc": 0.8801554122766009,
+   "n_sv": 64149
+  },
+  {
+   "config": "C=1|gamma=4x",
+   "cv_roc_auc": 0.9754546510533965,
+   "cv_mcc": 0.8780487359288485,
+   "n_sv": 65940
+  }
+ ],
+ "hiperparametros_finais": {
+  "kernel": "rbf",
+  "C": 100.0,
+  "gamma": 0.09514619264617266,
+  "gamma_fator": 4.0,
+  "cache_size": 200,
+  "class_weight": "balanced",
+  "normalizador": "StandardScaler nas colunas numéricas (média e desvio do próprio treino)"
+ }
+}

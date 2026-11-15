@@ -1,0 +1,66 @@
+{
+ "veredito": {
+  "RF ajustado": {
+   "Q1_decorar_o_treino": "pequena",
+   "Q2_generalizar_outro_dia": "grande",
+   "Q2_so_modelo": "grande",
+   "leitura": "sem sinal de decorar o treino (lacuna treino−validação: acurácia balanceada +0.0007, ROC-AUC +0.00001); a queda no teste (validação→teste: ROC-AUC -0.00864, falso alarme ×22.4, recall -0.0466) é COMPATÍVEL com mudança de distribuição entre os dias (classe mais distinta: Syn, ROC-AUC adversarial 1.000)",
+   "curva_ganho_50_100": {
+    "ganho_roc_auc": 1.9125467797254103e-06,
+    "situacao": "pequena"
+   }
+  },
+  "RF padrão": {
+   "Q1_decorar_o_treino": "pequena",
+   "Q2_generalizar_outro_dia": "grande",
+   "Q2_so_modelo": "grande",
+   "leitura": "sem sinal de decorar o treino (lacuna treino−validação: acurácia balanceada +0.0008, ROC-AUC +0.00006); a queda no teste (validação→teste: ROC-AUC -0.01000, falso alarme ×26.6, recall -0.0481) é COMPATÍVEL com mudança de distribuição entre os dias (classe mais distinta: Syn, ROC-AUC adversarial 1.000)",
+   "curva_ganho_50_100": {
+    "ganho_roc_auc": -4.648874006973891e-05,
+    "situacao": "pequena"
+   }
+  },
+  "SVM ajustado": {
+   "Q1_decorar_o_treino": "pequena",
+   "Q2_generalizar_outro_dia": "grande",
+   "Q2_so_modelo": "moderada",
+   "leitura": "sem sinal de decorar o treino (lacuna treino−validação: acurácia balanceada -0.0007, ROC-AUC +0.00013); a queda no teste (validação→teste: ROC-AUC -0.00418, falso alarme ×5.1, recall +0.0002) é COMPATÍVEL com mudança de distribuição entre os dias (classe mais distinta: Syn, ROC-AUC adversarial 1.000)",
+   "curva_ganho_50_100": {
+    "ganho_roc_auc": 6.50187118378387e-05,
+    "situacao": "pequena"
+   }
+  },
+  "SVM padrão": {
+   "Q1_decorar_o_treino": "pequena",
+   "Q2_generalizar_outro_dia": "grande",
+   "Q2_so_modelo": "grande",
+   "leitura": "sem sinal de decorar o treino (lacuna treino−validação: acurácia balanceada -0.0022, ROC-AUC -0.00020); a queda no teste (validação→teste: ROC-AUC -0.00425, falso alarme ×2.2, recall -0.2481) é COMPATÍVEL com mudança de distribuição entre os dias (classe mais distinta: Syn, ROC-AUC adversarial 1.000)",
+   "curva_ganho_50_100": {
+    "ganho_roc_auc": 8.249556824901916e-05,
+    "situacao": "pequena"
+   }
+  }
+ },
+ "sobreposicao_ajuste_validacao": {
+  "fracao_validacao_com_vetor_do_ajuste": 0.00799614323237025,
+  "linhas": 481,
+  "conflitos": 4,
+  "gravidade_geral": "pequena",
+  "pior_gravidade_por_grupo": "moderada",
+  "regra": [
+   0.01,
+   0.1
+  ]
+ },
+ "texto_sugerido_tcc": "Para investigar sobreajuste, comparamos o desempenho dos 4 modelos binários nas próprias linhas de treino, na validação cruzada, em uma validação separada do mesmo dia e no teste de outro dia, e complementamos com curvas de aprendizagem, um controle com rótulos embaralhados e uma validação adversarial por classe (treino × teste). Nenhum dos modelos apresentou sinal de memorização do treino segundo as regras definidas antes da análise (lacuna treino−validação pequena e controle com rótulos embaralhados em torno de 0,5). 0,80% das linhas da validação têm vetor de atributos idêntico ao de uma linha do ajuste (481 linhas; 4 com rótulo diferente), ou seja, a validação é praticamente independente do ajuste quanto a vetores repetidos. A queda de desempenho no teste (de outro dia) é compatível com mudança de distribuição entre os dias: a validação adversarial distinguiu treino e teste com ROC-AUC de até 1,00 (classe Syn), enquanto o controle do mesmo dia ficou em torno de 0,5. Como a validação do mesmo dia já está perto do teto (ROC-AUC acima de 0,999), a lacuna treino−validação tem pouco espaço para revelar sobreajuste; por isso o diagnóstico se apoia também na curva de aprendizagem, no controle com rótulos embaralhados e na validação adversarial. Esses resultados são evidências descritivas, obtidas em uma única partição de teste com muitas linhas repetidas; não provam a ausência de sobreajuste, e a validação do mesmo dia do treino não é capaz de detectar o ajuste às condições de um dia específico.",
+ "tempo_total_s": 1254.9960147002712,
+ "tempos_por_etapa_s": {
+  "2.1_tabela": 58.448553500231355,
+  "3.1_curva": 870.9953683000058,
+  "4.1_embaralhamento": 200.32204180024564,
+  "4.2_sobreposicao": 0.6219754000194371,
+  "5.1_adversarial": 123.30749960010871,
+  "6.1_veredito": 0.02255649957805872,
+  "7.1_gravacao": 1.2780196000821888
+ }
+}

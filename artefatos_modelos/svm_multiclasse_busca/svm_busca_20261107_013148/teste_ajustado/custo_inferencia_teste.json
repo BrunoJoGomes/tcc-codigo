@@ -1,0 +1,16 @@
+{
+ "vetores_distintos": 1865985,
+ "linhas": 7216487,
+ "vetores_de_suporte": 77699,
+ "relogio_previsao_s": 22647.300259700045,
+ "soma_tempos_tarefas_s": 22123.385914306156,
+ "ganho_paralelismo": 0.9768663664372317,
+ "max_simultaneos": 1,
+ "vazao_vetores_s": 82.3932644775521,
+ "vazao_linhas_equivalente_s": 318.64667829045595,
+ "equivalencia": {
+  "n": 3000,
+  "acordo": 1.0,
+  "dif_max": 2.3839290630434107e-07
+ }
+}

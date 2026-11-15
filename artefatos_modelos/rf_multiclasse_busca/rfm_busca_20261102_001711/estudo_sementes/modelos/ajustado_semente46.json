@@ -1,0 +1,18 @@
+{
+ "config": "ajustado",
+ "semente": 46,
+ "hiperparametros": {
+  "n_estimators": 100,
+  "max_depth": null,
+  "min_samples_split": 2,
+  "min_samples_leaf": 5,
+  "max_features": "sqrt",
+  "class_weight": "balanced",
+  "random_state": 46,
+  "n_jobs": -1
+ },
+ "treino_relogio_s": 49.37864500004798,
+ "nos_total": 1278104,
+ "arquivo_mib": 27.98801326751709,
+ "gravado_em": "2026-11-06T22:54:29"
+}

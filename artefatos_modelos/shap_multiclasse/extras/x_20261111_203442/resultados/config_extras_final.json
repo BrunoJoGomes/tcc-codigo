@@ -1,0 +1,61 @@
+{
+ "run_id": "20261111_203442",
+ "modo": "multi",
+ "pai": "shap_20261109_012110",
+ "impressao": "7ddca388a4f8",
+ "reaproveitado_do_notebook_14": {
+  "svm_fundo_base_todas_as_linhas": [
+   "svm_ajustado",
+   "svm_padrao"
+  ],
+  "rf_treeexplainer": [
+   "rf_ajustado",
+   "rf_padrao"
+  ]
+ },
+ "variantes": {
+  "perm_bg1": {
+   "fundo": "bg1",
+   "linhas_do_fundo": 7,
+   "modelos": [
+    "rf_ajustado",
+    "rf_padrao"
+   ],
+   "explicador": "perm"
+  }
+ },
+ "fundo_ids": [
+  510997794017276186,
+  2817979745398630800,
+  2932276821234146340,
+  4718205405711181153,
+  10756747093117152754,
+  11076442986307647846,
+  16143468983129719969
+ ],
+ "semente": 42,
+ "permutacoes": 1,
+ "atributos_negativos": [
+  "fwd_header_length",
+  "min_seg_size_forward"
+ ],
+ "tree_interventional": false,
+ "hardware": {
+  "so": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "nucleos_logicos": 12,
+  "nucleos_fisicos": 10,
+  "ram_total_gib": 7.692127227783203
+ },
+ "paralelismo": {
+  "processos_max": 4,
+  "estatisticas_sessao": {
+   "max_simultaneos": 1.0,
+   "interrompidos_por_memoria": 0.0,
+   "ram_proc_final": 1.0745935440063477,
+   "relogio_s": 582.4430346000008,
+   "soma_tempos_tarefas_s": 94.72823149943724,
+   "ganho_paralelismo": 0.16263947866505588
+  }
+ }
+}
